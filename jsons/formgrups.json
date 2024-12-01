@@ -1,0 +1,634 @@
+[
+  {
+    "GroupID": 1,
+    "FormID": 1,
+    "GroupName": "İHTAR FORMU",
+    "DisplayIndex": 0,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 3,
+    "FormID": 2,
+    "GroupName": "ŞUBE AÇILIŞ KONTROLÜ",
+    "DisplayIndex": 1,
+    "Point": 0,
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 4,
+    "FormID": 2,
+    "GroupName": "STOK KONTROLLERİ",
+    "DisplayIndex": 2,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 5,
+    "FormID": 2,
+    "GroupName": "PİŞİRME ,SERVİS VE SUNUM",
+    "DisplayIndex": 4,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 6,
+    "FormID": 2,
+    "GroupName": "MAL MALİYETİ",
+    "DisplayIndex": 5,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 7,
+    "FormID": 2,
+    "GroupName": "DEPO",
+    "DisplayIndex": 6,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 8,
+    "FormID": 2,
+    "GroupName": "EVRAKLAR / FORMLAR",
+    "DisplayIndex": 8,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 9,
+    "FormID": 2,
+    "GroupName": "PAZARLAMA",
+    "DisplayIndex": 9,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 11,
+    "FormID": 2,
+    "GroupName": "TAMİR İŞLERİ VE BAKIM İŞLERİ",
+    "DisplayIndex": 10,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 13,
+    "FormID": 2,
+    "GroupName": "İSG İŞ SAĞLIĞI VE GÜVENLİĞİ / RESTORAN EMNİYETİ",
+    "DisplayIndex": 11,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 30,
+    "FormID": 2,
+    "GroupName": "ÇALIŞAN YASAL VE ÖZLÜK HAKLARI",
+    "DisplayIndex": 12,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 32,
+    "FormID": 2,
+    "GroupName": "EMNİYET VE GÜVENLİK ( İhmal durumlarında Makayı koruma prosedürleri uygulanacaktır )",
+    "DisplayIndex": 13,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 34,
+    "FormID": 14,
+    "GroupName": "STOK VE FATURA/İRSALİYE/HARCAMA KONTROLLERİ",
+    "DisplayIndex": 2,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 46,
+    "FormID": 2,
+    "GroupName": "Şeften İste Paket",
+    "DisplayIndex": 14,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 49,
+    "FormID": 15,
+    "GroupName": "Şeften İste",
+    "DisplayIndex": 0,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 52,
+    "FormID": 14,
+    "GroupName": "EVRAK VE ÖDEME TAKİBİ",
+    "DisplayIndex": 3,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 53,
+    "FormID": 14,
+    "GroupName": "COVİD HİJYEN KONTROLLERİ",
+    "DisplayIndex": 4,
+    "Point": "NULL",
+    "LineDeleted": 1
+  },
+  {
+    "GroupID": 54,
+    "FormID": 14,
+    "GroupName": "ŞEFTEN İSTE",
+    "DisplayIndex": 5,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 55,
+    "FormID": 14,
+    "GroupName": "ŞUBE AÇILIŞ KONTROLÜ",
+    "DisplayIndex": 6,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 56,
+    "FormID": 14,
+    "GroupName": "PİŞİRME ,SERVİS VE SUNUM",
+    "DisplayIndex": 7,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 57,
+    "FormID": 14,
+    "GroupName": "MAL MALİYETİ VE ÖNERİLİ SATIŞ KONTROLÜ",
+    "DisplayIndex": 8,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 58,
+    "FormID": 14,
+    "GroupName": "DEPO",
+    "DisplayIndex": 9,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 59,
+    "FormID": 14,
+    "GroupName": "FORMLAR",
+    "DisplayIndex": 10,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 60,
+    "FormID": 14,
+    "GroupName": "PAZARLAMA",
+    "DisplayIndex": 11,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 61,
+    "FormID": 14,
+    "GroupName": "TAMİR İŞLERİ VE BAKIM İŞLERİ",
+    "DisplayIndex": 12,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 62,
+    "FormID": 14,
+    "GroupName": "PERSONEL",
+    "DisplayIndex": 13,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 63,
+    "FormID": 14,
+    "GroupName": "EMNİYET VE GÜVENLİK ( İhmal durumlarında Makayı koruma prosedürleri uygulanacaktır )",
+    "DisplayIndex": 14,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 66,
+    "FormID": 16,
+    "GroupName": "Restoran Kontrolleri",
+    "DisplayIndex": 0,
+    "Point": 0,
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 67,
+    "FormID": 16,
+    "GroupName": "Stok Kontrolleri",
+    "DisplayIndex": 1,
+    "Point": 0,
+    "LineDeleted": 1
+  },
+  {
+    "GroupID": 68,
+    "FormID": 16,
+    "GroupName": "Pişrime, Servis ve Sunum",
+    "DisplayIndex": 3,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 69,
+    "FormID": 16,
+    "GroupName": "Depo",
+    "DisplayIndex": 4,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 70,
+    "FormID": 16,
+    "GroupName": "İSG İş Sağlığı ve Emniyeti / Gıda Güvenliği",
+    "DisplayIndex": 5,
+    "Point": "NULL",
+    "LineDeleted": 1
+  },
+  {
+    "GroupID": 71,
+    "FormID": 16,
+    "GroupName": "EVRAKLAR / FORMLAR",
+    "DisplayIndex": 6,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 72,
+    "FormID": 2,
+    "GroupName": "Personel maliyeti / Vps / İşe Giriş çıkış Oranı (Turn over)",
+    "DisplayIndex": 7,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 73,
+    "FormID": 17,
+    "GroupName": "ALT YAPI VE EKİPMAN YÖNETİMİ",
+    "DisplayIndex": 0,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 74,
+    "FormID": 17,
+    "GroupName": "ZARARLI MÜCADELE (PEST KONTROL)",
+    "DisplayIndex": 1,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 75,
+    "FormID": 17,
+    "GroupName": "TEMİZLİK VE SANİTASYON",
+    "DisplayIndex": 2,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 76,
+    "FormID": 17,
+    "GroupName": "PERSONEL HİJYENİ",
+    "DisplayIndex": 3,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 77,
+    "FormID": 17,
+    "GroupName": "DEPOLAMA  VE MUHAFAZA",
+    "DisplayIndex": 4,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 78,
+    "FormID": 17,
+    "GroupName": "SON KULLANMA TARİHİ KONTROLLERİ",
+    "DisplayIndex": 5,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 79,
+    "FormID": 17,
+    "GroupName": "ETİKETLEME",
+    "DisplayIndex": 6,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 80,
+    "FormID": 17,
+    "GroupName": "GIDA GÜVENLİĞİ KONTROL DEFTERİ",
+    "DisplayIndex": 7,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 81,
+    "FormID": 17,
+    "GroupName": "ÜRETİM VE HAZIRLIK UYGULAMALARI",
+    "DisplayIndex": 8,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 82,
+    "FormID": 17,
+    "GroupName": "PAKET SERVİS",
+    "DisplayIndex": 9,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 83,
+    "FormID": 2,
+    "GroupName": "SOSYAL MEDYA TAKİP",
+    "DisplayIndex": 15,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 84,
+    "FormID": 18,
+    "GroupName": "ZİYARET ÖNCESİNDE Kİ (AY) ŞUBE PUANI",
+    "DisplayIndex": 0,
+    "Point": "NULL",
+    "LineDeleted": 1
+  },
+  {
+    "GroupID": 85,
+    "FormID": 18,
+    "GroupName": "SORULAR",
+    "DisplayIndex": 2,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 86,
+    "FormID": 18,
+    "GroupName": "KULLANICILAR",
+    "DisplayIndex": 1,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 87,
+    "FormID": 19,
+    "GroupName": "İDK FOTOLARI",
+    "DisplayIndex": 0,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 88,
+    "FormID": 19,
+    "GroupName": "ŞUBE GENEL DURUM VE FIRSATLARI",
+    "DisplayIndex": 1,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 89,
+    "FormID": 19,
+    "GroupName": "ŞUBE DETAYLI ANALİZ VE FIRSATLARI",
+    "DisplayIndex": 2,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 90,
+    "FormID": 2,
+    "GroupName": "Ekip | Stok | Ekipman / ESE",
+    "DisplayIndex": 3,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 91,
+    "FormID": 16,
+    "GroupName": "ESE ( Ekip | Stok | Ekipman )",
+    "DisplayIndex": 2,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 92,
+    "FormID": 21,
+    "GroupName": "ŞUBE GENEL KONTROLÜ",
+    "DisplayIndex": 0,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 93,
+    "FormID": 21,
+    "GroupName": "ESE ( Ekip | Stok | Ekipman )",
+    "DisplayIndex": 1,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 94,
+    "FormID": 21,
+    "GroupName": "ÖSS ( ÖNERİLİ SATIŞ STANDARDI)",
+    "DisplayIndex": 2,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 95,
+    "FormID": 21,
+    "GroupName": "PİŞİRME ,SERVİS VE SUNUM",
+    "DisplayIndex": 3,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 96,
+    "FormID": 21,
+    "GroupName": "MAL MALİYETİ",
+    "DisplayIndex": 4,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 97,
+    "FormID": 21,
+    "GroupName": "DEPO",
+    "DisplayIndex": 5,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 98,
+    "FormID": 21,
+    "GroupName": "EVRAKLAR / FORMLAR",
+    "DisplayIndex": 6,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 99,
+    "FormID": 21,
+    "GroupName": "PAZARLAMA",
+    "DisplayIndex": 7,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 100,
+    "FormID": 21,
+    "GroupName": "EMNİYET VE GÜVENLİK",
+    "DisplayIndex": 8,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 101,
+    "FormID": 21,
+    "GroupName": "ŞEFTEN İSTE PAKET SERVİS",
+    "DisplayIndex": 9,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 102,
+    "FormID": 22,
+    "GroupName": "SAHA ZİYARET FORMU",
+    "DisplayIndex": 0,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 103,
+    "FormID": 23,
+    "GroupName": "DENETİM MADDELERİ",
+    "DisplayIndex": 0,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 104,
+    "FormID": 21,
+    "GroupName": "RAMAZAN",
+    "DisplayIndex": 10,
+    "Point": "NULL",
+    "LineDeleted": 1
+  },
+  {
+    "GroupID": 105,
+    "FormID": 24,
+    "GroupName": "B. ALTYAPI VE EKİPMAN YÖNETİMİ",
+    "DisplayIndex": 1,
+    "Point": "NULL",
+    "LineDeleted": 1
+  },
+  {
+    "GroupID": 106,
+    "FormID": 24,
+    "GroupName": "GENEL KDZ SORULARI",
+    "DisplayIndex": 0,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 107,
+    "FormID": 24,
+    "GroupName": "C. ZARARLI MÜCADELE",
+    "DisplayIndex": 2,
+    "Point": "NULL",
+    "LineDeleted": 1
+  },
+  {
+    "GroupID": 108,
+    "FormID": 24,
+    "GroupName": "D.DEPOLAMA- SKT YÖNETİMİ",
+    "DisplayIndex": 3,
+    "Point": "NULL",
+    "LineDeleted": 1
+  },
+  {
+    "GroupID": 109,
+    "FormID": 24,
+    "GroupName": "E. GIDA GÜVENLİĞİ DEFTERİ- DİĞER KAYITLAR",
+    "DisplayIndex": 4,
+    "Point": "NULL",
+    "LineDeleted": 1
+  },
+  {
+    "GroupID": 110,
+    "FormID": 24,
+    "GroupName": "F. ÜRETİM HAZIRLIK UYGULAMALARI",
+    "DisplayIndex": 5,
+    "Point": "NULL",
+    "LineDeleted": 1
+  },
+  {
+    "GroupID": 111,
+    "FormID": 24,
+    "GroupName": "G. PERSONEL HİJYENİ VE FARKINDALIK",
+    "DisplayIndex": 6,
+    "Point": "NULL",
+    "LineDeleted": 1
+  },
+  {
+    "GroupID": 112,
+    "FormID": 24,
+    "GroupName": "H. DİĞER",
+    "DisplayIndex": 7,
+    "Point": "NULL",
+    "LineDeleted": 1
+  },
+  {
+    "GroupID": 113,
+    "FormID": 24,
+    "GroupName": "I.",
+    "DisplayIndex": 8,
+    "Point": "NULL",
+    "LineDeleted": 1
+  },
+  {
+    "GroupID": 114,
+    "FormID": 2,
+    "GroupName": "İnsan Kaynakları Bilgileri",
+    "DisplayIndex": 16,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 115,
+    "FormID": 21,
+    "GroupName": "İNSAN KAYNAKLARI BİLGİLERİ",
+    "DisplayIndex": 11,
+    "Point": "NULL",
+    "LineDeleted": 0
+  },
+  {
+    "GroupID": 116,
+    "FormID": 21,
+    "GroupName": "Kendi Tabağını Oluştur (KTO)",
+    "DisplayIndex": 12,
+    "Point": "NULL",
+    "LineDeleted": 1
+  },
+  {
+    "GroupID": 117,
+    "FormID": 16,
+    "GroupName": "Kendi Tabağını Oluştur (KTO)",
+    "DisplayIndex": 7,
+    "Point": "NULL",
+    "LineDeleted": 1
+  }
+]

@@ -1,0 +1,145 @@
+[
+  {
+    "FormID": 1,
+    "FormName": "İhtar Formu",
+    "Description": "Markayı Koruma Prosüdürleri",
+    "ControlPeriod": 0,
+    "ScoresIsActive": 0,
+    "Mails": "",
+    "MailSendAccepted": "NULL",
+    "MailSendSaved": 0,
+    "IsActive": 1
+  },
+  {
+    "FormID": 2,
+    "FormName": "O.D.Z",
+    "Description": "Operasyonel Destek Ziyaret Formu",
+    "ControlPeriod": 0,
+    "ScoresIsActive": 1,
+    "Mails": "NULL",
+    "MailSendAccepted": 1,
+    "MailSendSaved": 0,
+    "IsActive": 1
+  },
+  {
+    "FormID": 14,
+    "FormName": "M.O.D.Z",
+    "Description": "Merkezi Operasyonel Destek Ziyaret Formu",
+    "ControlPeriod": 2,
+    "ScoresIsActive": 1,
+    "Mails": "NULL",
+    "MailSendAccepted": 1,
+    "MailSendSaved": 0,
+    "IsActive": 1
+  },
+  {
+    "FormID": 15,
+    "FormName": "Ş.İ.P.D.Z.",
+    "Description": "Şeften İste Operasyonel Destek Ziyaret Formu",
+    "ControlPeriod": 0,
+    "ScoresIsActive": 1,
+    "Mails": "NULL",
+    "MailSendAccepted": 1,
+    "MailSendSaved": 0,
+    "IsActive": 1
+  },
+  {
+    "FormID": 16,
+    "FormName": "HDZ",
+    "Description": "Sıcak Spot Destek Ziyareti",
+    "ControlPeriod": 0,
+    "ScoresIsActive": 1,
+    "Mails": "NULL",
+    "MailSendAccepted": 1,
+    "MailSendSaved": 0,
+    "IsActive": 1
+  },
+  {
+    "FormID": 17,
+    "FormName": "KDZ",
+    "Description": "Bayi Kalite Destek Ziyareti",
+    "ControlPeriod": 0,
+    "ScoresIsActive": 1,
+    "Mails": "NULL",
+    "MailSendAccepted": 1,
+    "MailSendSaved": 0,
+    "IsActive": 1
+  },
+  {
+    "FormID": 18,
+    "FormName": "S.D.Z.F",
+    "Description": "SAHA DESTEK ZİYAFET FORMU",
+    "ControlPeriod": 0,
+    "ScoresIsActive": 1,
+    "Mails": "NULL",
+    "MailSendAccepted": 1,
+    "MailSendSaved": 0,
+    "IsActive": 1
+  },
+  {
+    "FormID": 19,
+    "FormName": "İDK Form",
+    "Description": "İletişim Destek Konferansları",
+    "ControlPeriod": 0,
+    "ScoresIsActive": 0,
+    "Mails": "NULL",
+    "MailSendAccepted": 1,
+    "MailSendSaved": 0,
+    "IsActive": 1
+  },
+  {
+    "FormID": 21,
+    "FormName": "O.D.Z Yeni",
+    "Description": "Operasyonel Destek Ziyaret Formu Yeni",
+    "ControlPeriod": 0,
+    "ScoresIsActive": 1,
+    "Mails": "NULL",
+    "MailSendAccepted": 1,
+    "MailSendSaved": 0,
+    "IsActive": 1
+  },
+  {
+    "FormID": 22,
+    "FormName": "SHİFFT",
+    "Description": "SHİFFT",
+    "ControlPeriod": 0,
+    "ScoresIsActive": 0,
+    "Mails": "NULL",
+    "MailSendAccepted": 1,
+    "MailSendSaved": 0,
+    "IsActive": 1
+  },
+  {
+    "FormID": 23,
+    "FormName": "SAHA ZİYARET FORMU YENİ",
+    "Description": "SAHA ZİYARET FORMU YENİ",
+    "ControlPeriod": 0,
+    "ScoresIsActive": 0,
+    "Mails": "NULL",
+    "MailSendAccepted": 1,
+    "MailSendSaved": 0,
+    "IsActive": 1
+  },
+  {
+    "FormID": 24,
+    "FormName": "KDZ Raporu (DEMO)",
+    "Description": "",
+    "ControlPeriod": 0,
+    "ScoresIsActive": 0,
+    "Mails": "aybala.denizci@tavukdunyasi.com",
+    "MailSendAccepted": 1,
+    "MailSendSaved": 0,
+    "IsActive": 1
+  },
+  {
+    "FormID": 25,
+    "FormName": "OMDR",
+    "Description": "OMDR",
+    "ControlPeriod": 1,
+    "ScoresIsActive": 0,
+    "Mails": "NULL",
+    "MailSendAccepted": 1,
+    "MailSendSaved": 0,
+    "IsActive": "NULL"
+  }
+]

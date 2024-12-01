@@ -5,6 +5,11 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: true },
+  experimental: {
+    serverActions: {
+      allowedOrigins: ["*"]
+    }
+  }
 };
 
 module.exports = nextConfig;
