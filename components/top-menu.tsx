@@ -1,6 +1,6 @@
 "use client"
 
-import { UserCircle, Plus, ClipboardList, Settings, Home, Menu } from "lucide-react"
+import { UserCircle, Plus, ClipboardList, Settings, Home, Menu, FileText } from "lucide-react"
 import { ThemeSwitcher } from "@/components/theme-switcher"
 import {
   DropdownMenu,
@@ -50,6 +50,12 @@ export function TopMenu() {
             </Link>
           </Button>
           <Button variant="ghost" asChild>
+            <Link href="/reports">
+              <FileText className="mr-2 h-4 w-4" />
+              Raporlar
+            </Link>
+          </Button>
+          <Button variant="ghost" asChild>
             <Link href="/settings">
               <Settings className="mr-2 h-4 w-4" />
               Ayarlar
@@ -76,6 +82,12 @@ export function TopMenu() {
                 <Link href="/forms" className="flex items-center">
                   <ClipboardList className="mr-2 h-4 w-4" />
                   Formlar
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/reports" className="flex items-center">
+                  <FileText className="mr-2 h-4 w-4" />
+                  Raporlar
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>

@@ -10,7 +10,6 @@ import {
   TableRow,
 } from "@/components/ui/table"
 import { Badge } from "@/components/ui/badge"
-import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { 
   Calendar, 
@@ -20,7 +19,6 @@ import {
   ClipboardList,
   Users,
   MessageSquare,
-  Search,
   ArrowUpDown,
   Loader2
 } from "lucide-react"
@@ -35,7 +33,6 @@ import {
   getCoreRowModel,
   getPaginationRowModel,
   getSortedRowModel,
-  getFilteredRowModel,
   flexRender,
   type ColumnDef,
   type SortingState,
@@ -76,7 +73,6 @@ const formColors: { [key: string]: string } = {
 
 export function RecentInspections({ inspections }: RecentInspectionsProps) {
   const [sorting, setSorting] = useState<SortingState>([])
-  const [globalFilter, setGlobalFilter] = useState("")
   const [loading, setLoading] = useState(true)
 
   // Yükleme animasyonunu simüle etmek için
@@ -192,21 +188,6 @@ export function RecentInspections({ inspections }: RecentInspectionsProps) {
       ),
       cell: ({ row }) => <TruncatedCell content={row.getValue("Notlar")} maxWidth="200px" />,
     },
-    {
-      accessorKey: "Şube Yetkilileri",
-      header: () => (
-        <div className="flex items-center gap-2">
-          <Users className="h-4 w-4" />
-          <span>Şube Yetkilileri</span>
-        </div>
-      ),
-      cell: ({ row }) => (
-        <TruncatedCell 
-          content={row.getValue("Şube Yetkilileri")} 
-          maxWidth="300px" 
-        />
-      ),
-    },
   ]
 
   const table = useReactTable({
@@ -215,12 +196,9 @@ export function RecentInspections({ inspections }: RecentInspectionsProps) {
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
     getSortedRowModel: getSortedRowModel(),
-    getFilteredRowModel: getFilteredRowModel(),
     onSortingChange: setSorting,
-    onGlobalFilterChange: setGlobalFilter,
     state: {
       sorting,
-      globalFilter,
     },
   })
 
@@ -236,22 +214,7 @@ export function RecentInspections({ inspections }: RecentInspectionsProps) {
   }
 
   return (
-    <div className="space-y-4">
-      <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-        <div className="relative flex-1 max-w-sm">
-          <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
-          <Input
-            placeholder="Ara..."
-            value={globalFilter ?? ""}
-            onChange={(event) => setGlobalFilter(event.target.value)}
-            className="pl-8"
-          />
-        </div>
-        <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
-          <span>{table.getFilteredRowModel().rows.length} kayıt gösteriliyor</span>
-        </div>
-      </div>
-
+    <div className="hidden md:block">
       <div className="h-[400px] rounded-lg border bg-gradient-to-br from-white to-gray-50/50 dark:from-gray-900 dark:to-gray-900/50 shadow-xl shadow-gray-200/40 dark:shadow-gray-900/40 border-gray-200/60 dark:border-gray-800/60 overflow-auto">
         <Table>
           <TableHeader>

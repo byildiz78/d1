@@ -7,6 +7,7 @@ import { ChartCard } from "@/components/dashboard/chart-card"
 import { StatsPieChart } from "@/components/dashboard/stats-pie-chart"
 import { FormDistributionCard } from "@/components/dashboard/form-distribution-card"
 import { Bell, ArrowRight, Activity, CheckCircle2, Clock } from "lucide-react"
+import Link from "next/link"
 import { 
   getActiveBranchCount, 
   getRecentInspections,
@@ -191,18 +192,20 @@ export default async function Home() {
                     Son yapılan denetimler ve sonuçları
                   </p>
                 </div>
-                <Button 
-                  variant="outline" 
-                  size="sm"
-                  className="group hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950"
-                >
-                  <span className="text-sm mr-2 group-hover:text-blue-600 dark:group-hover:text-blue-400">Tümünü Gör</span>
-                  <ArrowRight className="h-4 w-4 group-hover:text-blue-600 dark:group-hover:text-blue-400" />
-                </Button>
+                <Link href="/reports">
+                  <Button 
+                    variant="outline" 
+                    size="sm"
+                    className="group hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950"
+                  >
+                    <span className="text-sm mr-2 group-hover:text-blue-600 dark:group-hover:text-blue-400">Tümünü Gör</span>
+                    <ArrowRight className="h-4 w-4 group-hover:text-blue-600 dark:group-hover:text-blue-400" />
+                  </Button>
+                </Link>
               </div>
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <h2 className="text-2xl font-semibold">Son Denetimler</h2>
+                
                 </div>
                 <RecentInspections inspections={recentInspections.success ? recentInspections.data || [] : []} />
               </div>
@@ -219,7 +222,7 @@ export default async function Home() {
                     Bildirimler
                   </h3>
                   <div className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-600 dark:bg-blue-950 dark:text-blue-400">
-                    14 yeni
+                    son yapılan denetimler
                   </div>
                 </div>
                 <p className="text-[0.925rem] text-muted-foreground">
@@ -239,11 +242,7 @@ export default async function Home() {
             </div>
             <div className="flex-1 space-y-4">
               <div className="flex items-center justify-between">
-                <h3 className="text-lg font-medium">Son Bildirimler</h3>
-                <Button variant="outline" size="sm" className="text-xs">
-                  <Bell className="mr-2 h-3 w-3" />
-                  Tümünü Gör
-                </Button>
+             
               </div>
               <NotificationFeed initialData={notifications.success ? notifications.data : []} />
             </div>

@@ -173,7 +173,40 @@ export interface RecentInspection {
   'Şube Yetkilileri': string | null
 }
 
-export async function getRecentInspections(): Promise<{ success: boolean, data?: RecentInspection[], error?: string }> {
+export async function getRecentInspections() {
+  const sql = `
+    SELECT TOP 20
+      AuditId as No,
+      AuditDate as 'Tarih',
+      BranchName as 'Şube', 
+      FormName as 'Form',
+      BranchClass as 'Şube Sınıfı',
+      BranchType as 'Şube Tipi',
+      BranchKind as 'Şube Kategorisi',
+      RegionalManager as 'Bölge Müdürü',
+      ImageUrl as 'Resim Linki',
+      CASE 
+          WHEN ApproveStatus = 1 THEN 'Onaylandı'
+          WHEN ApproveStatus = 0 THEN 'Onay Bekliyor'
+          ELSE 'Belirsiz'
+      END as 'Onay Durumu',
+      CreatedUserName as 'Denetmen', 
+      ISNULL(descriptions,'') as 'Açıklama', 
+      Notes as 'Notlar',
+      BranchManagers as 'Şube Yetkilileri' 
+    FROM dbo.webBranchAuditRecords 
+    ORDER BY auditdate DESC
+  `
+
+  try {
+    const result = await executeQuery(sql)
+    return { success: true, data: result.data }
+  } catch (error: any) {
+    return { success: false, message: error.message }
+  }
+}
+
+export async function getRecentInspectionsOld(): Promise<{ success: boolean, data?: RecentInspection[], error?: string }> {
   try {
     const config = parseConnectionString(process.env.DATABASE_URL!);
     const pool = await sql.connect(config);
@@ -297,7 +330,7 @@ export async function getNotifications(): Promise<{ success: boolean, data?: Not
     const pool = await sql.connect(config);
     const result = await pool.request()
       .query(`
-        SELECT TOP 6
+        SELECT TOP 8
           AuditID as 'id',
           CreatedUserName as 'user',
           FormName as formName,
@@ -408,5 +441,117 @@ export async function getFormDistribution(): Promise<{ success: boolean, data?: 
       success: false, 
       error: error.message || 'Form dağılımı alınırken bir hata oluştu'
     };
+  }
+}
+
+export type InspectionHeader = {
+  No: number
+  Tarih: string
+  Şube: string
+  Form: string
+  'Şube Sınıfı': string
+  'Şube Tipi': string
+  'Şube Kategorisi': string
+  'Bölge Müdürü': string
+  'Resim Linki': string
+  'Onay Durumu': string
+  Denetmen: string
+  Açıklama: string
+  Notlar: string
+  'Şube Yetkilileri': string
+}
+
+export async function getInspectionHeader(auditId: number): Promise<{ success: boolean, data?: InspectionHeader, error?: string }> {
+  try {
+    const query = `
+            SELECT TOP 1
+      AuditId as No,
+      AuditDate as 'Tarih',
+      BranchName as 'Şube', 
+      FormName as 'Form',
+      BranchClass as 'Şube Sınıfı',
+      BranchType as 'Şube Tipi',
+      BranchKind as 'Şube Kategorisi',
+      RegionalManager as 'Bölge Müdürü',
+      ImageUrl as 'Resim Linki',
+      CASE 
+          WHEN ApproveStatus = 1 THEN 'Onaylandı'
+          WHEN ApproveStatus = 0 THEN 'Onay Bekliyor'
+          ELSE 'Belirsiz'
+      END as 'Onay Durumu',
+      CreatedUserName as 'Denetmen', 
+      ISNULL(descriptions,'') as 'Açıklama', 
+      Notes as 'Notlar',
+      BranchManagers as 'Şube Yetkilileri' 
+    FROM dbo.webBranchAuditRecords 
+
+	where AuditID=@auditId
+    ORDER BY auditdate DESC`
+
+    const result = await executeQuery(query.replace('@auditId', auditId.toString()))
+    
+    if (!result.success || !result.data || result.data.length === 0) {
+      return { success: false, error: "Denetim başlık bilgisi bulunamadı" }
+    }
+
+    return { success: true, data: result.data[0] as InspectionHeader }
+  } catch (error) {
+    console.error('Error fetching inspection header:', error)
+    return { success: false, error: "Denetim başlık bilgisi getirilirken hata oluştu" }
+  }
+}
+
+export async function getInspectionDetails(auditId: number) {
+  try {
+    const query = `
+      select 
+        AuditID as 'Denetim No',
+        GroupName as "Soru Grubu",
+        Question as Soru,
+        OptionName As Yanıt,
+        Score as Puan,
+        Comments as Yorum,
+        ImageUrl1 as Resim1,
+        ImageUrl2 as Resim2,
+        ImageUrl3 as Resim3,
+        ImageUrl4 as Resim4
+      from webBranchAuditRecordDetails 
+      where AuditID = ${auditId}
+      Order by groupdisplayIndex, questiondisplayIndex asc
+    `
+    const result = await executeQuery(query)
+    
+    if (!result.success) {
+      throw new Error(result.error)
+    }
+
+    return { success: true, data: result.data }
+  } catch (error: any) {
+    console.error("Error fetching inspection details:", error)
+    return { 
+      success: false, 
+      error: error.message || "Denetim detayları alınırken bir hata oluştu" 
+    }
+  }
+}
+
+export async function getAllInspectionIds(): Promise<{ success: boolean, data?: number[], error?: string }> {
+  try {
+    const query = `
+      SELECT DISTINCT AuditId 
+      FROM dbo.webBranchAuditRecords 
+      ORDER BY AuditId DESC`
+
+    const result = await executeQuery(query)
+    
+    if (!result.success || !result.data) {
+      return { success: false, error: result.message || "Denetim numaraları bulunamadı" }
+    }
+
+    const ids = result.data.map(record => record.AuditId)
+    return { success: true, data: ids }
+  } catch (error) {
+    console.error('Error fetching inspection IDs:', error)
+    return { success: false, error: "Denetim numaraları getirilirken hata oluştu" }
   }
 }

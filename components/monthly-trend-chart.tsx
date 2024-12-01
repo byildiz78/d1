@@ -103,20 +103,6 @@ export function MonthlyTrendChart({ initialData }: MonthlyTrendChartProps) {
             top: 4
           }
         }
-      },
-      {
-        type: 'line' as const,
-        label: 'Trend',
-        data: trendlineData,
-        borderColor: '#f43f5e',
-        borderWidth: 2,
-        borderDash: [5, 5],
-        pointRadius: 0,
-        fill: false,
-        tension: 0.4,
-        datalabels: {
-          display: false
-        }
       }
     ],
   };
