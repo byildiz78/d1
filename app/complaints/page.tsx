@@ -21,7 +21,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ComplaintSourceBadge } from "./components/complaint-source"
-import { Eye, Plus, Search, Filter, Calendar, Clock, Building2, User, MessageCircle, Tag, AlertCircle, FileText } from "lucide-react"
+import { Edit2, Plus, Search, Filter, Calendar, Clock, Building2, User, MessageCircle, Tag, AlertCircle, FileText } from "lucide-react"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 
@@ -191,7 +191,7 @@ export default function ComplaintsPage() {
   }
 
   return (
-    <div className="flex-1 space-y-6 p-4 md:p-8">
+    <div className="flex-1 space-y-6 p-8">
       {/* Header Section */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div className="space-y-1">
@@ -349,7 +349,7 @@ export default function ComplaintsPage() {
                 <TableHead className="text-right">
                   <div className="flex items-center justify-end gap-2">
                     <div className="w-8 h-8 rounded-lg bg-teal-100 dark:bg-teal-900/50 flex items-center justify-center">
-                      <Eye className="h-4 w-4 text-teal-600 dark:text-teal-400" />
+                      <Edit2 className="h-4 w-4 text-teal-600 dark:text-teal-400" />
                     </div>
                     <span className="font-semibold">İşlemler</span>
                   </div>
@@ -369,7 +369,8 @@ export default function ComplaintsPage() {
                       index % 2 === 0 
                         ? "bg-white dark:bg-gray-900" 
                         : "bg-gray-50/50 dark:bg-gray-800/50",
-                      "hover:bg-blue-50/50 dark:hover:bg-blue-900/20"
+                      "hover:bg-blue-50/50 dark:hover:bg-blue-900/20",
+                      "group"
                     )}
                   >
                     <TableCell className="font-medium max-w-[200px]">
@@ -425,9 +426,14 @@ export default function ComplaintsPage() {
                     </TableCell>
                     <TableCell>{complaint.assignedTo}</TableCell>
                     <TableCell className="text-right">
-                      <Button variant="ghost" size="icon" asChild>
-                        <Link href={`/complaints/${complaint.id}`}>
-                          <Eye className="h-4 w-4" />
+                      <Button 
+                        variant="ghost" 
+                        size="icon" 
+                        asChild
+                        className="hover:bg-blue-50 hover:text-blue-600 dark:hover:bg-blue-900/50 dark:hover:text-blue-400"
+                      >
+                        <Link href={`/complaints/${complaint.id}/edit`}>
+                          <Edit2 className="h-4 w-4" />
                         </Link>
                       </Button>
                     </TableCell>
