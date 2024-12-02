@@ -32,7 +32,7 @@ export function TopMenu() {
             height={40}
             className="dark:invert sm:hidden"
           />
-          <span className="ml-2 text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-purple-400 hidden sm:block">denetmen</span>
+          <span className="ml-2 text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-purple-400 hidden sm:block">operation manager  </span>
         </Link>
         
         {/* Desktop Navigation */}

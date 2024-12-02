@@ -75,17 +75,23 @@ export function MonthlyTrendChart({ initialData }: MonthlyTrendChartProps) {
         type: 'bar' as const,
         label: 'Denetim Sayısı',
         data: initialData.map(item => item.DenetimSayisi),
-        backgroundColor: function(context: any) {
-          const chart = context.chart;
-          const {ctx, chartArea} = chart;
-          if (!chartArea) {
-            return null;
-          }
-          const gradient = ctx.createLinearGradient(0, chartArea.bottom, 0, chartArea.top);
-          gradient.addColorStop(0, '#3b82f6');
-          gradient.addColorStop(1, '#60a5fa');
-          return gradient;
-        },
+        backgroundColor: initialData.map((_, index) => {
+          const colors = [
+            '#3b82f6', // blue
+            '#10b981', // green
+            '#8b5cf6', // purple
+            '#f59e0b', // amber
+            '#ef4444', // red
+            '#06b6d4', // cyan
+            '#ec4899', // pink
+            '#f97316', // orange
+            '#6366f1', // indigo
+            '#14b8a6', // teal
+            '#84cc16', // lime
+            '#a855f7', // violet
+          ];
+          return colors[index % colors.length];
+        }),
         borderRadius: 6,
         borderWidth: 0,
         datalabels: {
