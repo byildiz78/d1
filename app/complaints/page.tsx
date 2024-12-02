@@ -10,8 +10,6 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import {
   Select,
@@ -20,9 +18,12 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
 import { ComplaintSourceBadge } from "./components/complaint-source"
-import { Eye, Plus, Search, Filter, Calendar, Clock } from "lucide-react"
+import { Eye, Plus, Search, Filter, Calendar, Clock, Building2, User, MessageCircle, Tag, AlertCircle, FileText } from "lucide-react"
 import Link from "next/link"
+import { cn } from "@/lib/utils"
 
 // Enhanced mock data
 const complaints = [
@@ -95,48 +96,6 @@ const complaints = [
     assignedTo: "Elif Demir",
     customerName: "Mustafa Yılmaz",
     description: "Web sitesinde gösterilen fiyat ile fatura tutarı farklı."
-  },
-  {
-    id: 6,
-    title: "Teslimat Adresi Sorunu",
-    branch: "Bakırköy Şubesi",
-    source: "call_center",
-    status: "open",
-    priority: "high",
-    createdAt: "2024-03-21T13:20:00",
-    resolvedAt: null,
-    lastActionAt: "2024-03-21T14:45:00",
-    assignedTo: "Burak Şahin",
-    customerName: "Zehra Kaya",
-    description: "Yanlış adrese teslimat yapıldı."
-  },
-  {
-    id: 7,
-    title: "Ürün İadesi",
-    branch: "Mecidiyeköy Şubesi",
-    source: "twitter",
-    status: "in_progress",
-    priority: "medium",
-    createdAt: "2024-03-20T15:30:00",
-    resolvedAt: null,
-    lastActionAt: "2024-03-21T11:15:00",
-    assignedTo: "Deniz Yıldırım",
-    customerName: "Emre Çelik",
-    description: "Ürün iadesi için 1 haftadır bekliyorum."
-  },
-  {
-    id: 8,
-    title: "Promosyon Kodu Sorunu",
-    branch: "Levent Şubesi",
-    source: "instagram",
-    status: "resolved",
-    priority: "low",
-    createdAt: "2024-03-19T09:45:00",
-    resolvedAt: "2024-03-19T16:20:00",
-    lastActionAt: "2024-03-19T16:20:00",
-    assignedTo: "Selin Arslan",
-    customerName: "Oğuz Demir",
-    description: "Promosyon kodu çalışmıyor."
   }
 ]
 
@@ -232,7 +191,7 @@ export default function ComplaintsPage() {
   }
 
   return (
-    <div className="flex-1 space-y-6 p-8">
+    <div className="flex-1 space-y-6 p-4 md:p-8">
       {/* Header Section */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div className="space-y-1">
@@ -243,7 +202,7 @@ export default function ComplaintsPage() {
             Müşteri şikayetlerini yönetin ve takip edin
           </p>
         </div>
-        <Button asChild className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+        <Button asChild className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white w-full sm:w-auto">
           <Link href="/complaints/new">
             <Plus className="mr-2 h-4 w-4" />
             Yeni Şikayet
@@ -253,22 +212,20 @@ export default function ComplaintsPage() {
 
       {/* Filters Section */}
       <Card className="p-4">
-        <div className="flex flex-col sm:flex-row gap-4">
-          <div className="flex-1">
-            <div className="relative">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-              <Input
-                placeholder="Şikayet ara..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="pl-9"
-              />
-            </div>
+        <div className="flex flex-col gap-4">
+          <div className="relative w-full">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+            <Input
+              placeholder="Şikayet ara..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="pl-9 w-full"
+            />
           </div>
-          <div className="flex flex-wrap gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <Select value={statusFilter} onValueChange={setStatusFilter}>
-              <SelectTrigger className="w-[160px]">
-                <Filter className="mr-2 h-4 w-4" />
+              <SelectTrigger>
+                <AlertCircle className="mr-2 h-4 w-4" />
                 <SelectValue placeholder="Durum" />
               </SelectTrigger>
               <SelectContent>
@@ -281,8 +238,8 @@ export default function ComplaintsPage() {
             </Select>
 
             <Select value={priorityFilter} onValueChange={setPriorityFilter}>
-              <SelectTrigger className="w-[160px]">
-                <Filter className="mr-2 h-4 w-4" />
+              <SelectTrigger>
+                <Tag className="mr-2 h-4 w-4" />
                 <SelectValue placeholder="Öncelik" />
               </SelectTrigger>
               <SelectContent>
@@ -295,8 +252,8 @@ export default function ComplaintsPage() {
             </Select>
 
             <Select value={sourceFilter} onValueChange={setSourceFilter}>
-              <SelectTrigger className="w-[160px]">
-                <Filter className="mr-2 h-4 w-4" />
+              <SelectTrigger>
+                <MessageCircle className="mr-2 h-4 w-4" />
                 <SelectValue placeholder="Kaynak" />
               </SelectTrigger>
               <SelectContent>
@@ -312,107 +269,174 @@ export default function ComplaintsPage() {
       </Card>
 
       {/* Complaints Table */}
-      <Card>
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead>Başlık</TableHead>
-              <TableHead>Şube</TableHead>
-              <TableHead>Müşteri</TableHead>
-              <TableHead>Kaynak</TableHead>
-              <TableHead>Durum</TableHead>
-              <TableHead>Öncelik</TableHead>
-              <TableHead>Oluşturulma</TableHead>
-              <TableHead>Çözümlenme</TableHead>
-              <TableHead>Son İşlem</TableHead>
-              <TableHead>Atanan</TableHead>
-              <TableHead className="text-right">İşlemler</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {filteredComplaints.map((complaint) => {
-              const createdDateTime = formatDateTime(complaint.createdAt)
-              const resolvedDateTime = complaint.resolvedAt ? formatDateTime(complaint.resolvedAt) : null
-              const lastActionDateTime = formatDateTime(complaint.lastActionAt)
+      <Card className="border-0 shadow-xl bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm overflow-hidden">
+        <div className="overflow-x-auto">
+          <Table>
+            <TableHeader>
+              <TableRow className="bg-gradient-to-r from-gray-50 to-gray-100/50 dark:from-gray-800 dark:to-gray-900/50 hover:from-gray-100 hover:to-gray-50 dark:hover:from-gray-800 dark:hover:to-gray-900">
+                <TableHead>
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center">
+                      <FileText className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+                    </div>
+                    <span className="font-semibold">Başlık</span>
+                  </div>
+                </TableHead>
+                <TableHead>
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-purple-100 dark:bg-purple-900/50 flex items-center justify-center">
+                      <Building2 className="h-4 w-4 text-purple-600 dark:text-purple-400" />
+                    </div>
+                    <span className="font-semibold">Şube</span>
+                  </div>
+                </TableHead>
+                <TableHead>
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-green-100 dark:bg-green-900/50 flex items-center justify-center">
+                      <User className="h-4 w-4 text-green-600 dark:text-green-400" />
+                    </div>
+                    <span className="font-semibold">Müşteri</span>
+                  </div>
+                </TableHead>
+                <TableHead>
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-amber-100 dark:bg-amber-900/50 flex items-center justify-center">
+                      <MessageCircle className="h-4 w-4 text-amber-600 dark:text-amber-400" />
+                    </div>
+                    <span className="font-semibold">Kaynak</span>
+                  </div>
+                </TableHead>
+                <TableHead>
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-rose-100 dark:bg-rose-900/50 flex items-center justify-center">
+                      <AlertCircle className="h-4 w-4 text-rose-600 dark:text-rose-400" />
+                    </div>
+                    <span className="font-semibold">Durum</span>
+                  </div>
+                </TableHead>
+                <TableHead>
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-cyan-100 dark:bg-cyan-900/50 flex items-center justify-center">
+                      <Tag className="h-4 w-4 text-cyan-600 dark:text-cyan-400" />
+                    </div>
+                    <span className="font-semibold">Öncelik</span>
+                  </div>
+                </TableHead>
+                <TableHead>
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center">
+                      <Calendar className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
+                    </div>
+                    <span className="font-semibold">Oluşturulma</span>
+                  </div>
+                </TableHead>
+                <TableHead>
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-emerald-100 dark:bg-emerald-900/50 flex items-center justify-center">
+                      <Clock className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
+                    </div>
+                    <span className="font-semibold">Son İşlem</span>
+                  </div>
+                </TableHead>
+                <TableHead>
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-orange-100 dark:bg-orange-900/50 flex items-center justify-center">
+                      <User className="h-4 w-4 text-orange-600 dark:text-orange-400" />
+                    </div>
+                    <span className="font-semibold">Atanan</span>
+                  </div>
+                </TableHead>
+                <TableHead className="text-right">
+                  <div className="flex items-center justify-end gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-teal-100 dark:bg-teal-900/50 flex items-center justify-center">
+                      <Eye className="h-4 w-4 text-teal-600 dark:text-teal-400" />
+                    </div>
+                    <span className="font-semibold">İşlemler</span>
+                  </div>
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {filteredComplaints.map((complaint, index) => {
+                const createdDateTime = formatDateTime(complaint.createdAt)
+                const lastActionDateTime = formatDateTime(complaint.lastActionAt)
 
-              return (
-                <TableRow key={complaint.id} className="group hover:bg-muted/50">
-                  <TableCell className="font-medium max-w-[200px]">
-                    <div className="truncate" title={complaint.title}>
-                      {complaint.title}
-                    </div>
-                    <div className="text-xs text-muted-foreground truncate" title={complaint.description}>
-                      {complaint.description}
-                    </div>
-                  </TableCell>
-                  <TableCell>{complaint.branch}</TableCell>
-                  <TableCell>{complaint.customerName}</TableCell>
-                  <TableCell>
-                    <ComplaintSourceBadge source={complaint.source as any} />
-                  </TableCell>
-                  <TableCell>
-                    <Badge variant={getStatusBadgeVariant(complaint.status)}>
-                      {getStatusLabel(complaint.status)}
-                    </Badge>
-                  </TableCell>
-                  <TableCell>
-                    <Badge
-                      variant={
-                        complaint.priority === "high"
-                          ? "destructive"
+                return (
+                  <TableRow
+                    key={complaint.id}
+                    className={cn(
+                      "transition-all duration-200",
+                      index % 2 === 0 
+                        ? "bg-white dark:bg-gray-900" 
+                        : "bg-gray-50/50 dark:bg-gray-800/50",
+                      "hover:bg-blue-50/50 dark:hover:bg-blue-900/20"
+                    )}
+                  >
+                    <TableCell className="font-medium max-w-[200px]">
+                      <div className="truncate" title={complaint.title}>
+                        {complaint.title}
+                      </div>
+                      <div className="text-xs text-muted-foreground truncate" title={complaint.description}>
+                        {complaint.description}
+                      </div>
+                    </TableCell>
+                    <TableCell>{complaint.branch}</TableCell>
+                    <TableCell>{complaint.customerName}</TableCell>
+                    <TableCell>
+                      <ComplaintSourceBadge source={complaint.source as any} />
+                    </TableCell>
+                    <TableCell>
+                      <Badge variant={getStatusBadgeVariant(complaint.status)}>
+                        {getStatusLabel(complaint.status)}
+                      </Badge>
+                    </TableCell>
+                    <TableCell>
+                      <Badge
+                        variant={
+                          complaint.priority === "high"
+                            ? "destructive"
+                            : complaint.priority === "medium"
+                            ? "warning"
+                            : "default"
+                        }
+                      >
+                        {complaint.priority === "high"
+                          ? "Yüksek"
                           : complaint.priority === "medium"
-                          ? "warning"
-                          : "default"
-                      }
-                    >
-                      {complaint.priority === "high"
-                        ? "Yüksek"
-                        : complaint.priority === "medium"
-                        ? "Orta"
-                        : "Düşük"}
-                    </Badge>
-                  </TableCell>
-                  <TableCell>
-                    <div className="flex items-center gap-1">
-                      <Calendar className="h-4 w-4 text-muted-foreground" />
-                      <span>{createdDateTime.date}</span>
-                      <Clock className="h-4 w-4 ml-2 text-muted-foreground" />
-                      <span>{createdDateTime.time}</span>
-                    </div>
-                  </TableCell>
-                  <TableCell>
-                    {resolvedDateTime ? (
+                          ? "Orta"
+                          : "Düşük"}
+                      </Badge>
+                    </TableCell>
+                    <TableCell>
                       <div className="flex items-center gap-1">
                         <Calendar className="h-4 w-4 text-muted-foreground" />
-                        <span>{resolvedDateTime.date}</span>
+                        <span>{createdDateTime.date}</span>
                         <Clock className="h-4 w-4 ml-2 text-muted-foreground" />
-                        <span>{resolvedDateTime.time}</span>
+                        <span>{createdDateTime.time}</span>
                       </div>
-                    ) : (
-                      "-"
-                    )}
-                  </TableCell>
-                  <TableCell>
-                    <div className="flex items-center gap-1">
-                      <Calendar className="h-4 w-4 text-muted-foreground" />
-                      <span>{lastActionDateTime.date}</span>
-                      <Clock className="h-4 w-4 ml-2 text-muted-foreground" />
-                      <span>{lastActionDateTime.time}</span>
-                    </div>
-                  </TableCell>
-                  <TableCell>{complaint.assignedTo}</TableCell>
-                  <TableCell className="text-right">
-                    <Button variant="ghost" size="icon" asChild>
-                      <Link href={`/complaints/${complaint.id}`}>
-                        <Eye className="h-4 w-4" />
-                      </Link>
-                    </Button>
-                  </TableCell>
-                </TableRow>
-              )
-            })}
-          </TableBody>
-        </Table>
+                    </TableCell>
+                    <TableCell>
+                      <div className="flex items-center gap-1">
+                        <Calendar className="h-4 w-4 text-muted-foreground" />
+                        <span>{lastActionDateTime.date}</span>
+                        <Clock className="h-4 w-4 ml-2 text-muted-foreground" />
+                        <span>{lastActionDateTime.time}</span>
+                      </div>
+                    </TableCell>
+                    <TableCell>{complaint.assignedTo}</TableCell>
+                    <TableCell className="text-right">
+                      <Button variant="ghost" size="icon" asChild>
+                        <Link href={`/complaints/${complaint.id}`}>
+                          <Eye className="h-4 w-4" />
+                        </Link>
+                      </Button>
+                    </TableCell>
+                  </TableRow>
+                )
+              })}
+            </TableBody>
+          </Table>
+        </div>
       </Card>
 
       {/* Results Summary */}

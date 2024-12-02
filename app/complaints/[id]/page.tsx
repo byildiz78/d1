@@ -1,11 +1,12 @@
 "use client"
 
+import { use } from "react"
 import { useState } from "react"
-import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { Card } from "@/components/ui/card"
+import { Separator } from "@/components/ui/separator"
 import { Textarea } from "@/components/ui/textarea"
-import { ComplaintSourceBadge } from "../components/complaint-source"
 import { 
   MessageCircle, 
   Clock, 
@@ -16,15 +17,14 @@ import {
   AlertCircle,
   Send,
   ArrowLeft,
-  Phone,
-  Mail,
-  Tag,
   History,
   Edit2,
   Trash2,
-  Share2
+  Share2,
+  Phone,
+  Mail,
+  Tag
 } from "lucide-react"
-import { cn } from "@/lib/utils"
 import Link from "next/link"
 import {
   Tooltip,
@@ -32,6 +32,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import { cn } from "@/lib/utils"
 
 // Mock data - would normally come from an API
 const complaint = {
@@ -85,7 +86,8 @@ const complaint = {
   ]
 }
 
-export default function ComplaintDetailPage({ params }: { params: { id: string } }) {
+export default function ComplaintDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const resolvedParams = use(params)
   const [newComment, setNewComment] = useState("")
 
   const formatDateTime = (dateString: string) => {
@@ -141,7 +143,7 @@ export default function ComplaintDetailPage({ params }: { params: { id: string }
           </Link>
           <div>
             <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">
-              Şikayet #{params.id}
+              Şikayet #{resolvedParams.id}
             </h1>
             <p className="text-sm text-muted-foreground">
               {complaint.orderNumber} numaralı sipariş için oluşturulan şikayet
@@ -219,7 +221,6 @@ export default function ComplaintDetailPage({ params }: { params: { id: string }
 
               {/* Source and Branch */}
               <div className="flex items-center gap-4">
-                <ComplaintSourceBadge source={complaint.source as any} />
                 <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-900/20 dark:text-blue-400 dark:border-blue-800">
                   <Building2 className="mr-1 h-3 w-3" />
                   {complaint.branch}
