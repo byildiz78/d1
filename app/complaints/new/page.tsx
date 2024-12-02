@@ -26,7 +26,7 @@ import { Separator } from "@/components/ui/separator"
 import { ManagerSelect } from "../components/manager-select"
 import { ObserverSelect } from "../components/observer-select"
 import { ComplaintSource, complaintSourceMap } from "../types"
-import { AlertCircle, Building2, MessageCircle, User, ArrowLeft } from "lucide-react"
+import { MessageCircle, Building2, User, Send, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 
 const formSchema = z.object({
@@ -70,7 +70,7 @@ export default function NewComplaintPage() {
   }
 
   return (
-    <div className="flex-1 space-y-4 p-8">
+    <div className="flex-1 space-y-8 p-8 bg-gradient-to-br from-gray-50 to-gray-100/50 dark:from-gray-900 dark:to-gray-800/50">
       {/* Header */}
       <div className="flex items-center justify-between">
         <div className="space-y-1">
@@ -91,226 +91,248 @@ export default function NewComplaintPage() {
       </div>
 
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-          {/* Şikayet Detayları */}
-          <Card className="p-6">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+          <div className="grid gap-8 md:grid-cols-[2fr,1fr]">
             <div className="space-y-6">
-              <div className="flex items-center gap-2">
-                <div className="p-2 rounded-lg bg-blue-100 dark:bg-blue-900">
-                  <MessageCircle className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+              {/* Şikayet Detayları */}
+              <Card className="p-6 border-2 border-blue-200 dark:border-blue-800 bg-gradient-to-br from-blue-50/50 to-indigo-50/30 dark:from-blue-900/20 dark:to-indigo-900/10 shadow-xl shadow-blue-500/10 dark:shadow-blue-500/5">
+                <div className="space-y-6">
+                  <div className="flex items-center gap-2">
+                    <div className="p-3 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-500 shadow-lg shadow-blue-500/30 dark:shadow-blue-500/20">
+                      <MessageCircle className="h-5 w-5 text-white" />
+                    </div>
+                    <h3 className="text-lg font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">
+                      Şikayet Detayları
+                    </h3>
+                  </div>
+                  <Separator className="bg-blue-200/50 dark:bg-blue-800/50" />
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <FormField
+                      control={form.control}
+                      name="title"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Başlık</FormLabel>
+                          <FormControl>
+                            <Input placeholder="Şikayet başlığı" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
+                    <FormField
+                      control={form.control}
+                      name="branch"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Şube</FormLabel>
+                          <Select onValueChange={field.onChange} defaultValue={field.value}>
+                            <FormControl>
+                              <SelectTrigger>
+                                <SelectValue placeholder="Şube seçin" />
+                              </SelectTrigger>
+                            </FormControl>
+                            <SelectContent>
+                              <SelectItem value="kadikoy">Kadıköy Şubesi</SelectItem>
+                              <SelectItem value="besiktas">Beşiktaş Şubesi</SelectItem>
+                              <SelectItem value="sisli">Şişli Şubesi</SelectItem>
+                            </SelectContent>
+                          </Select>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
+                    <FormField
+                      control={form.control}
+                      name="description"
+                      render={({ field }) => (
+                        <FormItem className="col-span-2">
+                          <FormLabel>Açıklama</FormLabel>
+                          <FormControl>
+                            <Textarea
+                              placeholder="Şikayet detaylarını girin"
+                              className="min-h-[120px] resize-none"
+                              {...field}
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
+                    <FormField
+                      control={form.control}
+                      name="source"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Kaynak</FormLabel>
+                          <Select onValueChange={field.onChange} defaultValue={field.value}>
+                            <FormControl>
+                              <SelectTrigger>
+                                <SelectValue placeholder="Kaynak seçin" />
+                              </SelectTrigger>
+                            </FormControl>
+                            <SelectContent>
+                              {Object.entries(complaintSourceMap).map(([key, value]) => (
+                                <SelectItem key={key} value={key}>
+                                  {value}
+                                </SelectItem>
+                              ))}
+                            </SelectContent>
+                          </Select>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
+                    <FormField
+                      control={form.control}
+                      name="priority"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Öncelik</FormLabel>
+                          <Select onValueChange={field.onChange} defaultValue={field.value}>
+                            <FormControl>
+                              <SelectTrigger>
+                                <SelectValue placeholder="Öncelik seçin" />
+                              </SelectTrigger>
+                            </FormControl>
+                            <SelectContent>
+                              <SelectItem value="high">Yüksek</SelectItem>
+                              <SelectItem value="medium">Orta</SelectItem>
+                              <SelectItem value="low">Düşük</SelectItem>
+                            </SelectContent>
+                          </Select>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
                 </div>
-                <h3 className="text-lg font-semibold">Şikayet Detayları</h3>
-              </div>
-              <Separator />
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <FormField
-                  control={form.control}
-                  name="title"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Başlık</FormLabel>
-                      <FormControl>
-                        <Input placeholder="Şikayet başlığı" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
+              </Card>
 
-                <FormField
-                  control={form.control}
-                  name="branch"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Şube</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
-                        <FormControl>
-                          <SelectTrigger>
-                            <SelectValue placeholder="Şube seçin" />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          <SelectItem value="kadikoy">Kadıköy Şubesi</SelectItem>
-                          <SelectItem value="besiktas">Beşiktaş Şubesi</SelectItem>
-                          <SelectItem value="sisli">Şişli Şubesi</SelectItem>
-                        </SelectContent>
-                      </Select>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
+              {/* Müşteri Bilgileri */}
+              <Card className="p-6 border-2 border-purple-200 dark:border-purple-800 bg-gradient-to-br from-purple-50/50 to-pink-50/30 dark:from-purple-900/20 dark:to-pink-900/10 shadow-xl shadow-purple-500/10 dark:shadow-purple-500/5">
+                <div className="space-y-6">
+                  <div className="flex items-center gap-2">
+                    <div className="p-3 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 dark:shadow-purple-500/20">
+                      <User className="h-5 w-5 text-white" />
+                    </div>
+                    <h3 className="text-lg font-semibold bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400 bg-clip-text text-transparent">
+                      Müşteri Bilgileri
+                    </h3>
+                  </div>
+                  <Separator className="bg-purple-200/50 dark:bg-purple-800/50" />
 
-                <FormField
-                  control={form.control}
-                  name="description"
-                  render={({ field }) => (
-                    <FormItem className="col-span-2">
-                      <FormLabel>Açıklama</FormLabel>
-                      <FormControl>
-                        <Textarea
-                          placeholder="Şikayet detaylarını girin"
-                          className="min-h-[120px] resize-none"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <FormField
+                      control={form.control}
+                      name="customerName"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Müşteri Adı</FormLabel>
+                          <FormControl>
+                            <Input placeholder="Müşteri adı" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
 
-                <FormField
-                  control={form.control}
-                  name="source"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Kaynak</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
-                        <FormControl>
-                          <SelectTrigger>
-                            <SelectValue placeholder="Kaynak seçin" />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          {Object.entries(complaintSourceMap).map(([key, value]) => (
-                            <SelectItem key={key} value={key}>
-                              {value}
-                            </SelectItem>
-                          ))}
-                        </SelectContent>
-                      </Select>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
+                    <FormField
+                      control={form.control}
+                      name="customerContact"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>İletişim Bilgisi</FormLabel>
+                          <FormControl>
+                            <Input placeholder="Telefon veya e-posta" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
+                </div>
+              </Card>
+            </div>
 
-                <FormField
-                  control={form.control}
-                  name="priority"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Öncelik</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
-                        <FormControl>
-                          <SelectTrigger>
-                            <SelectValue placeholder="Öncelik seçin" />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          <SelectItem value="high">Yüksek</SelectItem>
-                          <SelectItem value="medium">Orta</SelectItem>
-                          <SelectItem value="low">Düşük</SelectItem>
-                        </SelectContent>
-                      </Select>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
+            <div className="space-y-6">
+              {/* Atama Bilgileri */}
+              <Card className="p-6 border-2 border-green-200 dark:border-green-800 bg-gradient-to-br from-green-50/50 to-emerald-50/30 dark:from-green-900/20 dark:to-emerald-900/10 shadow-xl shadow-green-500/10 dark:shadow-green-500/5">
+                <div className="space-y-6">
+                  <div className="flex items-center gap-2">
+                    <div className="p-3 rounded-xl bg-gradient-to-br from-green-500 to-emerald-500 shadow-lg shadow-green-500/30 dark:shadow-green-500/20">
+                      <Building2 className="h-5 w-5 text-white" />
+                    </div>
+                    <h3 className="text-lg font-semibold bg-gradient-to-r from-green-600 to-emerald-600 dark:from-green-400 dark:to-emerald-400 bg-clip-text text-transparent">
+                      Atama Bilgileri
+                    </h3>
+                  </div>
+                  <Separator className="bg-green-200/50 dark:bg-green-800/50" />
+
+                  <div className="space-y-6">
+                    <FormField
+                      control={form.control}
+                      name="assignedTo"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Atanan Yönetici</FormLabel>
+                          <FormControl>
+                            <ManagerSelect
+                              value={field.value}
+                              onChange={field.onChange}
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
+                    <FormField
+                      control={form.control}
+                      name="observers"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Gözlemciler</FormLabel>
+                          <FormControl>
+                            <ObserverSelect
+                              value={field.value || []}
+                              onChange={field.onChange}
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
+                </div>
+              </Card>
+
+              {/* Submit Buttons */}
+              <div className="flex flex-col gap-3">
+                <Button 
+                  type="submit" 
+                  className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-lg shadow-blue-500/25 dark:shadow-blue-500/15"
+                >
+                  <Send className="mr-2 h-4 w-4" />
+                  Şikayet Oluştur
+                </Button>
+                <Button 
+                  variant="outline" 
+                  className="w-full border-2 hover:border-red-500 hover:bg-red-50 dark:hover:bg-red-950" 
+                  asChild
+                >
+                  <Link href="/complaints">
+                    <ArrowLeft className="mr-2 h-4 w-4" />
+                    İptal
+                  </Link>
+                </Button>
               </div>
             </div>
-          </Card>
-
-          {/* Müşteri Bilgileri */}
-          <Card className="p-6">
-            <div className="space-y-6">
-              <div className="flex items-center gap-2">
-                <div className="p-2 rounded-lg bg-purple-100 dark:bg-purple-900">
-                  <User className="h-5 w-5 text-purple-600 dark:text-purple-400" />
-                </div>
-                <h3 className="text-lg font-semibold">Müşteri Bilgileri</h3>
-              </div>
-              <Separator />
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <FormField
-                  control={form.control}
-                  name="customerName"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Müşteri Adı</FormLabel>
-                      <FormControl>
-                        <Input placeholder="Müşteri adı" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <FormField
-                  control={form.control}
-                  name="customerContact"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>İletişim Bilgisi</FormLabel>
-                      <FormControl>
-                        <Input placeholder="Telefon veya e-posta" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-              </div>
-            </div>
-          </Card>
-
-          {/* Atama Bilgileri */}
-          <Card className="p-6">
-            <div className="space-y-6">
-              <div className="flex items-center gap-2">
-                <div className="p-2 rounded-lg bg-green-100 dark:bg-green-900">
-                  <Building2 className="h-5 w-5 text-green-600 dark:text-green-400" />
-                </div>
-                <h3 className="text-lg font-semibold">Atama Bilgileri</h3>
-              </div>
-              <Separator />
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <FormField
-                  control={form.control}
-                  name="assignedTo"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Atanan Yönetici</FormLabel>
-                      <FormControl>
-                        <ManagerSelect
-                          value={field.value}
-                          onChange={field.onChange}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <FormField
-                  control={form.control}
-                  name="observers"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Gözlemciler</FormLabel>
-                      <FormControl>
-                        <ObserverSelect
-                          value={field.value || []}
-                          onChange={field.onChange}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-              </div>
-            </div>
-          </Card>
-
-          {/* Submit Button */}
-          <div className="flex justify-end gap-4">
-            <Button variant="outline" asChild>
-              <Link href="/complaints">İptal</Link>
-            </Button>
-            <Button type="submit" className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
-              <AlertCircle className="mr-2 h-4 w-4" />
-              Şikayet Oluştur
-            </Button>
           </div>
         </form>
       </Form>
