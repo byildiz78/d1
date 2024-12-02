@@ -1,6 +1,6 @@
 "use client"
 
-import { UserCircle, Plus, ClipboardList, Settings, Home, Menu, FileText } from "lucide-react"
+import { UserCircle, Plus, ClipboardList, Settings, Home, Menu, FileText, MessageSquare } from "lucide-react"
 import { ThemeSwitcher } from "@/components/theme-switcher"
 import {
   DropdownMenu,
@@ -32,7 +32,7 @@ export function TopMenu() {
             height={40}
             className="dark:invert sm:hidden"
           />
-          <span className="ml-2 text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-purple-400 hidden sm:block">operation manager  </span>
+          <span className="ml-2 text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-purple-400 hidden sm:block">operation manager</span>
         </Link>
         
         {/* Desktop Navigation */}
@@ -47,6 +47,12 @@ export function TopMenu() {
             <Link href="/forms">
               <ClipboardList className="mr-2 h-4 w-4" />
               Formlar
+            </Link>
+          </Button>
+          <Button variant="ghost" asChild>
+            <Link href="/complaints">
+              <MessageSquare className="mr-2 h-4 w-4" />
+              Şikayet Yönetimi
             </Link>
           </Button>
           <Button variant="ghost" asChild>
@@ -82,6 +88,12 @@ export function TopMenu() {
                 <Link href="/forms" className="flex items-center">
                   <ClipboardList className="mr-2 h-4 w-4" />
                   Formlar
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/complaints" className="flex items-center">
+                  <MessageSquare className="mr-2 h-4 w-4" />
+                  Şikayet Yönetimi
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
