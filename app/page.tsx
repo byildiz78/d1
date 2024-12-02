@@ -20,25 +20,25 @@ import {
 } from './actions/database'
 
 export default async function Home() {
-  const [
-    branchCount, 
-    recentInspections,
-    totalInspections,
-    monthlyInspections,
-    weeklyInspections,
-    notifications,
-    monthlyTrend,
-    formDistribution
-  ] = await Promise.all([
+  // First batch of essential data
+  const [branchCount, totalInspections, monthlyInspections] = await Promise.all([
     getActiveBranchCount(),
-    getRecentInspections(),
     getTotalInspectionCount(),
-    getCurrentMonthInspectionCount(),
-    getCurrentWeekInspectionCount(),
-    getNotifications(),
-    getMonthlyInspectionCounts(),
-    getFormDistribution()
-  ])
+    getCurrentMonthInspectionCount()
+  ]);
+
+  // Second batch with a small delay
+  const [weeklyInspections, notifications] = await Promise.all([
+    new Promise(resolve => setTimeout(() => resolve(getCurrentWeekInspectionCount()), 100)),
+    new Promise(resolve => setTimeout(() => resolve(getNotifications()), 200))
+  ]);
+
+  // Third batch with another delay
+  const [monthlyTrend, formDistribution, recentInspections] = await Promise.all([
+    new Promise(resolve => setTimeout(() => resolve(getMonthlyInspectionCounts()), 300)),
+    new Promise(resolve => setTimeout(() => resolve(getFormDistribution()), 400)),
+    new Promise(resolve => setTimeout(() => resolve(getRecentInspections()), 500))
+  ]);
 
   console.log('Monthly trend data:', {
     success: monthlyTrend.success,

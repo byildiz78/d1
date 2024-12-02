@@ -2,7 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from "@/components/theme-provider"
-import { TopMenu } from '@/components/top-menu'
+import { ConditionalTopMenu } from '@/components/conditional-top-menu'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,7 +27,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="flex min-h-screen flex-col">
-            <TopMenu />
+            <ConditionalTopMenu />
             <main className="flex-1 overflow-y-auto bg-background">
               {children}
             </main>

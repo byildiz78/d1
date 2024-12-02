@@ -143,15 +143,17 @@ export async function executeQuery(query: string) {
 
 export async function getActiveBranchCount() {
   try {
-    const config = parseConnectionString(process.env.DATABASE_URL!);
-    const pool = await sql.connect(config);
-    const result = await pool.request()
-      .query('select count(branchID) as count from efr_branchs where IsActive=1');
-    await pool.close();
+    const result = await executeQuery(
+      'select count(branchID) as count from efr_branchs where IsActive=1'
+    );
+    
+    if (!result.success) {
+      throw new Error(result.message);
+    }
     
     return { 
       success: true, 
-      count: result.recordset[0].count
+      count: result.data?.[0].count || 0
     };
   } catch (error: any) {
     console.error('Error getting branch count:', error);
@@ -161,16 +163,6 @@ export async function getActiveBranchCount() {
       count: 0
     };
   }
-}
-
-export interface RecentInspection {
-  Form: string
-  Tarih: Date
-  Şube: string
-  Denetmen: string
-  Açıklama: string
-  Notlar: string | null
-  'Şube Yetkilileri': string | null
 }
 
 export async function getRecentInspections() {
@@ -241,49 +233,51 @@ export async function getRecentInspectionsOld(): Promise<{ success: boolean, dat
 
 export async function getTotalInspectionCount(): Promise<{ success: boolean, count: number, message?: string }> {
   try {
-    const config = parseConnectionString(process.env.DATABASE_URL!);
-    const pool = await sql.connect(config);
-    const result = await pool.request()
-      .query('SELECT COUNT(formID) as count FROM webBranchAuditRecords');
-    await pool.close();
+    const result = await executeQuery(
+      'SELECT COUNT(AuditID) as count FROM dbo.webBranchAuditRecords'
+    );
+    
+    if (!result.success) {
+      throw new Error(result.message);
+    }
     
     return { 
       success: true, 
-      count: result.recordset[0].count
+      count: result.data?.[0].count || 0
     };
   } catch (error: any) {
     console.error('Error getting total inspection count:', error);
     return { 
       success: false, 
-      message: `Toplam denetim sayısı alınırken hata oluştu: ${error.message}`,
-      count: 0
+      count: 0,
+      message: `Toplam denetim sayısı alınırken hata oluştu: ${error.message}`
     };
   }
 }
 
 export async function getCurrentMonthInspectionCount(): Promise<{ success: boolean, count: number, message?: string }> {
   try {
-    const config = parseConnectionString(process.env.DATABASE_URL!);
-    const pool = await sql.connect(config);
-    const result = await pool.request()
-      .query(`
-        SELECT COUNT(formID) as count 
-        FROM webBranchAuditRecords 
-        WHERE MONTH(AuditDate) = MONTH(GETDATE()) 
-        AND YEAR(AuditDate) = YEAR(GETDATE())
-      `);
-    await pool.close();
+    const result = await executeQuery(`
+        SELECT COUNT(AuditID) as count 
+      FROM dbo.webBranchAuditRecords 
+      WHERE MONTH(AuditDate) = MONTH(GETDATE()) 
+      AND YEAR(AuditDate) = YEAR(GETDATE())
+    `);
+    
+    if (!result.success) {
+      throw new Error(result.message);
+    }
     
     return { 
       success: true, 
-      count: result.recordset[0].count
+      count: result.data?.[0].count || 0
     };
   } catch (error: any) {
     console.error('Error getting current month inspection count:', error);
     return { 
       success: false, 
-      message: `Bu ayki denetim sayısı alınırken hata oluştu: ${error.message}`,
-      count: 0
+      count: 0,
+      message: `Bu ayki denetim sayısı alınırken hata oluştu: ${error.message}`
     };
   }
 }
@@ -294,8 +288,8 @@ export async function getCurrentWeekInspectionCount(): Promise<{ success: boolea
     const pool = await sql.connect(config);
     const result = await pool.request()
       .query(`
-        SELECT COUNT(formID) as count 
-        FROM webBranchAuditRecords 
+        SELECT COUNT(AuditID) as count 
+        FROM dbo.webBranchAuditRecords 
         WHERE AuditDate >= DATEADD(WEEK, DATEDIFF(WEEK, 0, GETDATE()), 0)
       `);
     await pool.close();

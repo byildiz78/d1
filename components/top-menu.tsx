@@ -1,6 +1,6 @@
 "use client"
 
-import { UserCircle, Plus, ClipboardList, Settings, Home, Menu, FileText, MessageSquare } from "lucide-react"
+import { UserCircle, Plus, ClipboardList, Settings, Home, Menu, FileText, MessageSquare, LogOut } from "lucide-react"
 import { ThemeSwitcher } from "@/components/theme-switcher"
 import {
   DropdownMenu,
@@ -12,8 +12,17 @@ import {
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
+import { useRouter } from "next/navigation"
 
 export function TopMenu() {
+  const router = useRouter()
+
+  const handleLogout = () => {
+    document.cookie = "isAuthenticated=false; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT"
+    router.push("/login")
+    router.refresh()
+  }
+
   return (
     <div className="border-b bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 dark:from-blue-500/5 dark:via-purple-500/5 dark:to-pink-500/5">
       <div className="flex h-16 items-center px-4 shadow-sm">
@@ -68,6 +77,14 @@ export function TopMenu() {
             </Link>
           </Button>
         </div>
+
+        <div className="flex items-center ml-auto space-x-4">
+          <ThemeSwitcher />
+          <Button variant="ghost" onClick={handleLogout}>
+            <LogOut className="mr-2 h-4 w-4" />
+            Çıkış Yap
+          </Button>
+        </div>
         
         {/* Mobile Navigation */}
         <div className="ml-4 md:hidden">
@@ -108,42 +125,10 @@ export function TopMenu() {
                   Ayarlar
                 </Link>
               </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-        </div>
-        
-        <div className="ml-auto flex items-center space-x-4">
-          <Button asChild>
-            <Link href="/forms/new">
-              <Plus className="mr-2 h-4 w-4" />
-              <span className="hidden sm:inline">Yeni Form</span>
-            </Link>
-          </Button>
-          
-          <ThemeSwitcher />
-          
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="relative h-10 w-10 rounded-full">
-                <UserCircle className="h-8 w-8" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56" align="end">
-              <div className="flex items-center justify-start gap-2 p-2">
-                <div className="flex flex-col space-y-1">
-                  <p className="text-sm font-medium leading-none">Ahmet Yılmaz</p>
-                  <p className="text-xs leading-none text-muted-foreground">
-                    ahmet.yilmaz@robotpos.com
-                  </p>
-                </div>
-              </div>
               <DropdownMenuSeparator />
-              <DropdownMenuItem>
-                <UserCircle className="mr-2 h-4 w-4" />
-                <span>Profil</span>
-              </DropdownMenuItem>
-              <DropdownMenuItem className="text-red-600">
-                <span>Çıkış Yap</span>
+              <DropdownMenuItem onClick={handleLogout}>
+                <LogOut className="mr-2 h-4 w-4" />
+                Çıkış Yap
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

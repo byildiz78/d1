@@ -16,17 +16,102 @@ interface DatabaseConfig {
 
 // Singleton connection pool
 let globalPool: sql.ConnectionPool | null = null
+let isConnecting = false
+let connectionPromise: Promise<sql.ConnectionPool> | null = null
+let lastConnectionError: Error | null = null
+let lastErrorTime: number = 0
+const ERROR_THRESHOLD = 5000 // 5 seconds
 
 async function getConnectionPool(config: DatabaseConfig): Promise<sql.ConnectionPool> {
-  if (globalPool) {
+  const now = Date.now()
+
+  // If there was a recent error, throw it instead of trying again too quickly
+  if (lastConnectionError && (now - lastErrorTime) < ERROR_THRESHOLD) {
+    throw lastConnectionError
+  }
+
+  // If we already have a pool and it's connected, return it
+  if (globalPool?.connected) {
     return globalPool
   }
 
+  // If we're in the process of connecting, wait for it
+  if (isConnecting && connectionPromise) {
+    return connectionPromise
+  }
+
+  // Reset error state since we're trying a new connection
+  lastConnectionError = null
+  lastErrorTime = 0
+
   try {
-    globalPool = await new sql.ConnectionPool(config).connect()
+    isConnecting = true
+    connectionPromise = new sql.ConnectionPool(config)
+      .connect()
+      .then(pool => {
+        console.log('New database connection pool created')
+        
+        // Handle pool errors
+        pool.on('error', err => {
+          console.error('Database pool error:', err)
+          lastConnectionError = err
+          lastErrorTime = Date.now()
+          globalPool = null
+        })
+
+        // Set max listeners to prevent memory leak warning
+        pool.setMaxListeners(15)
+        
+        return pool
+      })
+
+    globalPool = await connectionPromise
     return globalPool
-  } catch (error) {
+  } catch (error: any) {
     console.error('Failed to create connection pool:', error)
+    lastConnectionError = error
+    lastErrorTime = Date.now()
+    throw error
+  } finally {
+    isConnecting = false
+    connectionPromise = null
+  }
+}
+
+// Helper function to get a connection with retry logic
+async function getConnection(retries = 3, delay = 1000): Promise<sql.ConnectionPool> {
+  if (!process.env.DATABASE_URL) {
+    throw new Error("Database connection string not found")
+  }
+
+  const config = parseConnectionString(process.env.DATABASE_URL)
+  
+  for (let i = 0; i < retries; i++) {
+    try {
+      return await getConnectionPool(config)
+    } catch (error) {
+      if (i === retries - 1) throw error
+      await new Promise(resolve => setTimeout(resolve, delay))
+    }
+  }
+
+  throw new Error("Failed to establish database connection after retries")
+}
+
+// Helper function to safely execute queries with connection management
+async function executeQuerySafe<T>(queryFn: (pool: sql.ConnectionPool) => Promise<T>): Promise<T> {
+  const pool = await getConnection()
+  try {
+    return await queryFn(pool)
+  } catch (error) {
+    if (globalPool) {
+      try {
+        await globalPool.close()
+      } catch (closeError) {
+        console.error('Error closing pool after error:', closeError)
+      }
+      globalPool = null
+    }
     throw error
   }
 }
@@ -105,16 +190,7 @@ export async function executeQuery<T = any>(query: string): Promise<{
   error?: string
   rowsAffected?: number
 }> {
-  if (!process.env.DATABASE_URL) {
-    return { 
-      success: false, 
-      error: "Veritabanı bağlantı bilgileri bulunamadı" 
-    }
-  }
-
-  try {
-    const config = parseConnectionString(process.env.DATABASE_URL)
-    const pool = await getConnectionPool(config)
+  return executeQuerySafe(async pool => {
     const result = await pool.request().query(query)
     
     return { 
@@ -122,13 +198,7 @@ export async function executeQuery<T = any>(query: string): Promise<{
       data: result.recordset,
       rowsAffected: result.rowsAffected[0]
     }
-  } catch (error: any) {
-    console.error('Query execution error:', error)
-    return { 
-      success: false, 
-      error: `Sorgu çalıştırılırken hata oluştu: ${error.message}` 
-    }
-  }
+  })
 }
 
 // Cleanup function to close the global pool
