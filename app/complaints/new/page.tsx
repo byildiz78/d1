@@ -26,8 +26,9 @@ import { Separator } from "@/components/ui/separator"
 import { ManagerSelect } from "../components/manager-select"
 import { ObserverSelect } from "../components/observer-select"
 import { ComplaintSource, complaintSourceMap } from "../types"
-import { MessageCircle, Building2, User, Send, ArrowLeft } from "lucide-react"
+import { MessageCircle, Building2, User, Send, ArrowLeft, FileUp } from "lucide-react"
 import Link from "next/link"
+import { FileUpload } from "../components/file-upload"
 
 const formSchema = z.object({
   title: z.string().min(2, {
@@ -55,6 +56,7 @@ const formSchema = z.object({
   customerContact: z.string().min(5, {
     message: "İletişim bilgisi en az 5 karakter olmalıdır.",
   }),
+  files: z.array(z.instanceof(File)).optional(),
 })
 
 export default function NewComplaintPage() {
@@ -62,6 +64,7 @@ export default function NewComplaintPage() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       observers: [],
+      files: [],
     },
   })
 
@@ -94,126 +97,6 @@ export default function NewComplaintPage() {
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
           <div className="grid gap-8 md:grid-cols-[2fr,1fr]">
             <div className="space-y-6">
-              {/* Şikayet Detayları */}
-              <Card className="p-6 border-2 border-blue-200 dark:border-blue-800 bg-gradient-to-br from-blue-50/50 to-indigo-50/30 dark:from-blue-900/20 dark:to-indigo-900/10 shadow-xl shadow-blue-500/10 dark:shadow-blue-500/5">
-                <div className="space-y-6">
-                  <div className="flex items-center gap-2">
-                    <div className="p-3 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-500 shadow-lg shadow-blue-500/30 dark:shadow-blue-500/20">
-                      <MessageCircle className="h-5 w-5 text-white" />
-                    </div>
-                    <h3 className="text-lg font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">
-                      Şikayet Detayları
-                    </h3>
-                  </div>
-                  <Separator className="bg-blue-200/50 dark:bg-blue-800/50" />
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <FormField
-                      control={form.control}
-                      name="title"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Başlık</FormLabel>
-                          <FormControl>
-                            <Input placeholder="Şikayet başlığı" {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-
-                    <FormField
-                      control={form.control}
-                      name="branch"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Şube</FormLabel>
-                          <Select onValueChange={field.onChange} defaultValue={field.value}>
-                            <FormControl>
-                              <SelectTrigger>
-                                <SelectValue placeholder="Şube seçin" />
-                              </SelectTrigger>
-                            </FormControl>
-                            <SelectContent>
-                              <SelectItem value="kadikoy">Kadıköy Şubesi</SelectItem>
-                              <SelectItem value="besiktas">Beşiktaş Şubesi</SelectItem>
-                              <SelectItem value="sisli">Şişli Şubesi</SelectItem>
-                            </SelectContent>
-                          </Select>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-
-                    <FormField
-                      control={form.control}
-                      name="description"
-                      render={({ field }) => (
-                        <FormItem className="col-span-2">
-                          <FormLabel>Açıklama</FormLabel>
-                          <FormControl>
-                            <Textarea
-                              placeholder="Şikayet detaylarını girin"
-                              className="min-h-[120px] resize-none"
-                              {...field}
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-
-                    <FormField
-                      control={form.control}
-                      name="source"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Kaynak</FormLabel>
-                          <Select onValueChange={field.onChange} defaultValue={field.value}>
-                            <FormControl>
-                              <SelectTrigger>
-                                <SelectValue placeholder="Kaynak seçin" />
-                              </SelectTrigger>
-                            </FormControl>
-                            <SelectContent>
-                              {Object.entries(complaintSourceMap).map(([key, value]) => (
-                                <SelectItem key={key} value={key}>
-                                  {value}
-                                </SelectItem>
-                              ))}
-                            </SelectContent>
-                          </Select>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-
-                    <FormField
-                      control={form.control}
-                      name="priority"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Öncelik</FormLabel>
-                          <Select onValueChange={field.onChange} defaultValue={field.value}>
-                            <FormControl>
-                              <SelectTrigger>
-                                <SelectValue placeholder="Öncelik seçin" />
-                              </SelectTrigger>
-                            </FormControl>
-                            <SelectContent>
-                              <SelectItem value="high">Yüksek</SelectItem>
-                              <SelectItem value="medium">Orta</SelectItem>
-                              <SelectItem value="low">Düşük</SelectItem>
-                            </SelectContent>
-                          </Select>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                  </div>
-                </div>
-              </Card>
-
               {/* Müşteri Bilgileri */}
               <Card className="p-6 border-2 border-purple-200 dark:border-purple-800 bg-gradient-to-br from-purple-50/50 to-pink-50/30 dark:from-purple-900/20 dark:to-pink-900/10 shadow-xl shadow-purple-500/10 dark:shadow-purple-500/5">
                 <div className="space-y-6">
@@ -258,9 +141,169 @@ export default function NewComplaintPage() {
                   </div>
                 </div>
               </Card>
+
+              {/* Şikayet Detayları */}
+              <Card className="p-6 border-2 border-blue-200 dark:border-blue-800 bg-gradient-to-br from-blue-50/50 to-indigo-50/30 dark:from-blue-900/20 dark:to-indigo-900/10 shadow-xl shadow-blue-500/10 dark:shadow-blue-500/5">
+                <div className="space-y-6">
+                  <div className="flex items-center gap-2">
+                    <div className="p-3 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-500 shadow-lg shadow-blue-500/30 dark:shadow-blue-500/20">
+                      <MessageCircle className="h-5 w-5 text-white" />
+                    </div>
+                    <h3 className="text-lg font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">
+                      Şikayet Detayları
+                    </h3>
+                  </div>
+                  <Separator className="bg-blue-200/50 dark:bg-blue-800/50" />
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <FormField
+                      control={form.control}
+                      name="title"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Başlık</FormLabel>
+                          <FormControl>
+                            <Input placeholder="Şikayet başlığı" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
+                    <FormField
+                      control={form.control}
+                      name="branch"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Şube</FormLabel>
+                          <FormControl>
+                            <Select onValueChange={field.onChange} defaultValue={field.value}>
+                              <FormControl>
+                                <SelectTrigger>
+                                  <SelectValue placeholder="Şube seçin" />
+                                </SelectTrigger>
+                              </FormControl>
+                              <SelectContent>
+                                <SelectItem value="kadikoy">Kadıköy Şubesi</SelectItem>
+                                <SelectItem value="besiktas">Beşiktaş Şubesi</SelectItem>
+                                <SelectItem value="sisli">Şişli Şubesi</SelectItem>
+                              </SelectContent>
+                            </Select>
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
+                    <FormField
+                      control={form.control}
+                      name="description"
+                      render={({ field }) => (
+                        <FormItem className="col-span-2">
+                          <FormLabel>Açıklama</FormLabel>
+                          <FormControl>
+                            <Textarea
+                              placeholder="Şikayet detaylarını girin"
+                              className="min-h-[120px] resize-none"
+                              {...field}
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
+                    <FormField
+                      control={form.control}
+                      name="source"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Kaynak</FormLabel>
+                          <FormControl>
+                            <Select onValueChange={field.onChange} defaultValue={field.value}>
+                              <FormControl>
+                                <SelectTrigger>
+                                  <SelectValue placeholder="Kaynak seçin" />
+                                </SelectTrigger>
+                              </FormControl>
+                              <SelectContent>
+                                {Object.entries(complaintSourceMap).map(([key, value]) => (
+                                  <SelectItem key={key} value={key}>
+                                    {value}
+                                  </SelectItem>
+                                ))}
+                              </SelectContent>
+                            </Select>
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
+                    <FormField
+                      control={form.control}
+                      name="priority"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Öncelik</FormLabel>
+                          <FormControl>
+                            <Select onValueChange={field.onChange} defaultValue={field.value}>
+                              <FormControl>
+                                <SelectTrigger>
+                                  <SelectValue placeholder="Öncelik seçin" />
+                                </SelectTrigger>
+                              </FormControl>
+                              <SelectContent>
+                                <SelectItem value="high">Yüksek</SelectItem>
+                                <SelectItem value="medium">Orta</SelectItem>
+                                <SelectItem value="low">Düşük</SelectItem>
+                              </SelectContent>
+                            </Select>
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
+                </div>
+              </Card>
             </div>
 
             <div className="space-y-6">
+              {/* Dosyalar */}
+              <Card className="p-6 border-2 border-indigo-200 dark:border-indigo-800 bg-gradient-to-br from-indigo-50/50 to-violet-50/30 dark:from-indigo-900/20 dark:to-violet-900/10 shadow-xl shadow-indigo-500/10 dark:shadow-indigo-500/5">
+                <div className="space-y-6">
+                  <div className="flex items-center gap-2">
+                    <div className="p-3 rounded-xl bg-gradient-to-br from-indigo-500 to-violet-500 shadow-lg shadow-indigo-500/30 dark:shadow-indigo-500/20">
+                      <FileUp className="h-5 w-5 text-white" />
+                    </div>
+                    <h3 className="text-lg font-semibold bg-gradient-to-r from-indigo-600 to-violet-600 dark:from-indigo-400 dark:to-violet-400 bg-clip-text text-transparent">
+                      Dosyalar
+                    </h3>
+                  </div>
+                  <Separator className="bg-indigo-200/50 dark:bg-indigo-800/50" />
+
+                  <FormField
+                    control={form.control}
+                    name="files"
+                    render={({ field: { value, onChange } }) => (
+                      <FormItem>
+                        <FormControl>
+                          <FileUpload
+                            value={value}
+                            onChange={onChange}
+                            onRemove={(file) => {
+                              onChange(value?.filter((f) => f !== file))
+                            }}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+              </Card>
+
               {/* Atama Bilgileri */}
               <Card className="p-6 border-2 border-green-200 dark:border-green-800 bg-gradient-to-br from-green-50/50 to-emerald-50/30 dark:from-green-900/20 dark:to-emerald-900/10 shadow-xl shadow-green-500/10 dark:shadow-green-500/5">
                 <div className="space-y-6">
