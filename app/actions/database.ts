@@ -169,7 +169,7 @@ export async function getRecentInspections() {
   const sql = `
     SELECT TOP 20
       AuditId as No,
-      AuditDate as 'Tarih',
+      CreationDate as 'Tarih',
       BranchName as 'Şube', 
       FormName as 'Form',
       BranchClass as 'Şube Sınıfı',
@@ -187,7 +187,7 @@ export async function getRecentInspections() {
       Notes as 'Notlar',
       BranchManagers as 'Şube Yetkilileri' 
     FROM dbo.webBranchAuditRecords 
-    ORDER BY auditdate DESC
+    ORDER BY CreationDate DESC
   `
 
   try {
@@ -207,14 +207,14 @@ export async function getRecentInspectionsOld(): Promise<{ success: boolean, dat
         
  SELECT TOP 20 
           FormName as 'Form',
-          AuditDate as 'Tarih',
+          CreationDate as 'Tarih',
           BranchName as 'Şube', 
           CreatedUserName as 'Denetmen', 
           ISNULL(descriptions,'') as 'Açıklama', 
           Notes as 'Notlar',
           BranchManagers as 'Şube Yetkilileri' 
         FROM dbo.webBranchAuditRecords 
-        ORDER BY auditdate DESC
+        ORDER BY CreationDate DESC
       `);
     await pool.close();
     
@@ -260,8 +260,8 @@ export async function getCurrentMonthInspectionCount(): Promise<{ success: boole
     const result = await executeQuery(`
         SELECT COUNT(AuditID) as count 
       FROM dbo.webBranchAuditRecords 
-      WHERE MONTH(AuditDate) = MONTH(GETDATE()) 
-      AND YEAR(AuditDate) = YEAR(GETDATE())
+      WHERE MONTH(CreationDate) = MONTH(GETDATE()) 
+      AND YEAR(CreationDate) = YEAR(GETDATE())
     `);
     
     if (!result.success) {
@@ -290,7 +290,7 @@ export async function getCurrentWeekInspectionCount(): Promise<{ success: boolea
       .query(`
         SELECT COUNT(AuditID) as count 
         FROM dbo.webBranchAuditRecords 
-        WHERE AuditDate >= DATEADD(WEEK, DATEDIFF(WEEK, 0, GETDATE()), 0)
+        WHERE CreationDate >= DATEADD(WEEK, DATEDIFF(WEEK, 0, GETDATE()), 0)
       `);
     await pool.close();
     
@@ -329,11 +329,11 @@ export async function getNotifications(): Promise<{ success: boolean, data?: Not
           CreatedUserName as 'user',
           FormName as formName,
           BranchName as location,
-          CONVERT(varchar, AuditDate, 103) as date,
-          CONVERT(varchar, AuditDate, 108) as time,
-          AuditDate as rawDate
+          CONVERT(varchar, CreationDate, 103) as date,
+          CONVERT(varchar, CreationDate, 108) as time,
+          CreationDate as rawDate
         FROM dbo.webBranchAuditRecords 
-        ORDER BY AuditDate DESC
+        ORDER BY CreationDate DESC
       `);
     await pool.close();
   
@@ -359,12 +359,12 @@ export async function getMonthlyInspectionCounts(): Promise<{ success: boolean, 
       .query(`
         SET LANGUAGE English;
         SELECT 
-          DATENAME(MONTH, AuditDate) as Month,
+          DATENAME(MONTH, CreationDate) as Month,
           COUNT(AuditID) as DenetimSayisi
         FROM dbo.webBranchAuditRecords
-        WHERE YEAR(AuditDate) = YEAR(GETDATE())
-        GROUP BY MONTH(AuditDate), DATENAME(MONTH, AuditDate)
-        ORDER BY MONTH(AuditDate)
+        WHERE YEAR(CreationDate) = YEAR(GETDATE())
+        GROUP BY MONTH(CreationDate), DATENAME(MONTH, CreationDate)
+        ORDER BY MONTH(CreationDate)
       `);
     await pool.close();
     
@@ -413,7 +413,7 @@ export async function getFormDistribution(): Promise<{ success: boolean, data?: 
         SELECT COUNT(formID) as count,
         FormName 
         FROM webBranchAuditRecords 
-        WHERE YEAR(AuditDate) = YEAR(GETDATE()) 
+        WHERE YEAR(CreationDate) = YEAR(GETDATE()) 
         GROUP BY FormName
       `);
     await pool.close();
@@ -460,7 +460,7 @@ export async function getInspectionHeader(auditId: number): Promise<{ success: b
     const query = `
             SELECT TOP 1
       AuditId as No,
-      AuditDate as 'Tarih',
+      CreationDate as 'Tarih',
       BranchName as 'Şube', 
       FormName as 'Form',
       BranchClass as 'Şube Sınıfı',
@@ -480,7 +480,7 @@ export async function getInspectionHeader(auditId: number): Promise<{ success: b
     FROM dbo.webBranchAuditRecords 
 
 	where AuditID=@auditId
-    ORDER BY auditdate DESC`
+    ORDER BY CreationDate DESC`
 
     const result = await executeQuery(query.replace('@auditId', auditId.toString()))
     
