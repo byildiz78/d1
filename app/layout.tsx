@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from "@/components/theme-provider"
 import { ConditionalTopMenu } from '@/components/conditional-top-menu'
+import { LoadingProvider } from '@/components/loading-provider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,12 +27,14 @@ export default function RootLayout({
           themes={["light", "dark", "blue", "red"]}
           disableTransitionOnChange
         >
-          <div className="flex min-h-screen flex-col">
-            <ConditionalTopMenu />
-            <main className="flex-1 overflow-y-auto bg-background">
-              {children}
-            </main>
-          </div>
+          <LoadingProvider>
+            <div className="flex min-h-screen flex-col">
+              <ConditionalTopMenu />
+              <main className="flex-1 overflow-y-auto bg-background">
+                {children}
+              </main>
+            </div>
+          </LoadingProvider>
         </ThemeProvider>
       </body>
     </html>

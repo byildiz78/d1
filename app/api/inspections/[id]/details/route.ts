@@ -1,10 +1,10 @@
 import { getInspectionDetails } from "@/app/actions/database"
-import { NextResponse } from "next/server"
+import { NextRequest, NextResponse } from "next/server"
 
 export async function GET(
-  request: Request,
+  request: NextRequest,
   { params }: { params: { id: string } }
-) {
+): Promise<NextResponse> {
   try {
     const result = await getInspectionDetails(parseInt(params.id))
     
