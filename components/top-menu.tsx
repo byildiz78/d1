@@ -1,6 +1,6 @@
 "use client"
 
-import { UserCircle, Plus, ClipboardList, Settings, Menu, FileText, MessageSquare, LogOut } from "lucide-react"
+import { UserCircle, Plus, ClipboardList, Settings, Home, Menu, FileText, MessageSquare, LogOut } from "lucide-react"
 import { ThemeSwitcher } from "@/components/theme-switcher"
 import {
   DropdownMenu,
@@ -26,7 +26,7 @@ export function TopMenu() {
   return (
     <div className="border-b bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 dark:from-blue-500/5 dark:via-purple-500/5 dark:to-pink-500/5">
       <div className="flex h-16 items-center px-4 shadow-sm">
-        <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
+        <Link href="/" className="flex items-center">
           <Image
             src="/robotpos-logo.svg"
             alt="robotPOS Logo"
@@ -46,6 +46,12 @@ export function TopMenu() {
         
         {/* Desktop Navigation */}
         <div className="ml-8 hidden md:flex items-center space-x-4">
+          <Button variant="ghost" asChild>
+            <Link href="/">
+              <Home className="mr-2 h-4 w-4" />
+              Ana Sayfa
+            </Link>
+          </Button>
           <Button variant="ghost" asChild>
             <Link href="/forms">
               <ClipboardList className="mr-2 h-4 w-4" />
@@ -89,6 +95,12 @@ export function TopMenu() {
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="start" className="w-48">
+              <DropdownMenuItem asChild>
+                <Link href="/" className="flex items-center">
+                  <Home className="mr-2 h-4 w-4" />
+                  Ana Sayfa
+                </Link>
+              </DropdownMenuItem>
               <DropdownMenuItem asChild>
                 <Link href="/forms" className="flex items-center">
                   <ClipboardList className="mr-2 h-4 w-4" />
