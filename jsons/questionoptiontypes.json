@@ -1,0 +1,20 @@
+[
+  {
+    "AutoID": 1,
+    "OptionName": "UYGUN",
+    "Score": 1,
+    "DisplayIndex": 1
+  },
+  {
+    "AutoID": 2,
+    "OptionName": "UYGUN DEĞİL",
+    "Score": 0,
+    "DisplayIndex": 2
+  },
+  {
+    "AutoID": 3,
+    "OptionName": "DEĞ. DIŞI",
+    "Score": -1,
+    "DisplayIndex": 0
+  }
+]

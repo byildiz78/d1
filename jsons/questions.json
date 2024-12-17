@@ -1,0 +1,3386 @@
+[
+  {
+    "QuestionID": 1,
+    "GroupID": 1,
+    "Question": "Şirket Prensibi Dışı Uygulamalar.",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 2,
+    "GroupID": 3,
+    "Question": "Dış Görünüm, Tebala ve Aydınlatmalar Yanıyormu, Temizliği Yapılmış mı ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": 0
+  },
+  {
+    "QuestionID": 3,
+    "GroupID": 3,
+    "Question": "Salon Kapanış Temizliği Yapılmış mı ? Salon Açılışa Hazır mı ? Gün İçerisinde de Temizlik Yapılıyor mu ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 4,
+    "GroupID": 3,
+    "Question": "Bahçe & Teras Temizliği Yapılmış mı ?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 5,
+    "GroupID": 3,
+    "Question": "Mutfak Kapanış Temizliği Yapılmış mı ? Mutfak Servise Hazır mı ?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 6,
+    "GroupID": 3,
+    "Question": "Dekor ve Oturma Grupları Temiz ve Bakımlımıydı ?",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 7,
+    "GroupID": 4,
+    "Question": "Dış Alım Yapılmış mı ? -",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 8,
+    "GroupID": 4,
+    "Question": "SKT Kontrolleri Yapılmış mı ? Düzenli Olarak Yapılıyor mu ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 9,
+    "GroupID": 4,
+    "Question": "Günlük Stok Kontrolleri Yapılıyor mu ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 11,
+    "GroupID": 5,
+    "Question": "Sipariş Süreleri ve Takibi Yapılıyor mu ? Müşteriye Servis 10 Dakika İçerisinde Veriliyor mu ?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 12,
+    "GroupID": 5,
+    "Question": "Kıvamında Pişirilme Yapılıyor mu ? Tabak Son Kontrolleri ve Ürünlerin Doğru Sunumu Yapılıyor mu ? Kenarlarına Yağ/Kir Sıçrayan Tabaklar Masaya Giderken Siliniyor mu?",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 13,
+    "GroupID": 5,
+    "Question": "Boşlar Hızlıca Toplanarak Masalar Yeni Servis için Hazır Edilmekte mi ?",
+    "DisplayIndex": 6,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 14,
+    "GroupID": 5,
+    "Question": "Makarna Pişirme ve Soslama Standartları Doğru Uygulanıyor mu ? Tabak Son Kontrolleri Yapılıp Sıcak Şekilde Servis Ediliyor mu ? Makarna Sosu Uygun Ölçüde ve Homojen Bir Şekilde Karıştırılıyor mu ?",
+    "DisplayIndex": 9,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 15,
+    "GroupID": 6,
+    "Question": "Ürün Kaçağı Varmı ? Et, Sos, vb ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 16,
+    "GroupID": 6,
+    "Question": "Mal Maliyeti Kontrolleri Yapılıyor mu ? Gerekli Aksiyon Alınıyor mu ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 17,
+    "GroupID": 6,
+    "Question": "Yan Ürün / Önerili Satış Konusunda Çalışmalar Yapılıyor mu ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 18,
+    "GroupID": 7,
+    "Question": "Depolama Düzeni, Raflar, Dolaplar Uygun mu ? Palet Kullanımı Varmı ve Uygun mu ? ( Tanımlı Bir İade/Karantina Ürün Alanı Mevcut Olmalı, Yere/Duvara Temas Eden Ürün Olmamalı, Depolarda Koli, Ahşap Palet Yada Ahşap Kasa ile Depolama Yapılmamalı, Mevcut Raf, Dolap ve Paletlerin Yapısı Temizlik&Dezenfeksiyona Uygun ve Bakımlı Olmalıdır.)",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 19,
+    "GroupID": 7,
+    "Question": "Mal Kabulü Esnasında Ürünlerin Kontrolü Talimata Uygun Yapılıyor ve Ürünler Bekletilmeden Depolara Alınıyor mu ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 20,
+    "GroupID": 8,
+    "Question": "İlaçlama ve Baca Temizliği Düzenli Yapılmakta mı ? Atık Yağlar Düzenli Teslim Edilmekte ve Tümünün Kayıtları tutulmakta mı ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 22,
+    "GroupID": 8,
+    "Question": "Sistem Formları Mevcut mu ve Düzenli Olarak Dolduruluyor mu ? (İzlenebilirlik Takip Formu, Depo Sıcaklık Takip Formu, Kızartma Yağı Ölçüm ve Takip Formu, Sebze Dezenfeksiyon Formu, Çözdürme Takip Formu, Temizlik Takip Formları vb.)",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 24,
+    "GroupID": 8,
+    "Question": "Hijyen ve Temizlik Eylem Planları ve Hijyen Sertifikası Raporu Uygun Yerde Asılı ve Tüm Personel Konulara Vakıf mı ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 27,
+    "GroupID": 9,
+    "Question": "Cadde ve AVM de Ücretsiz Alanlar Takip Edilmekte mi ? Görsellerimiz ……… Noktada Sergilenmekte mi ? Verimli Ücretli Alanlarla İlgili Teklifler Değerlendiriliyor mu?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 31,
+    "GroupID": 11,
+    "Question": "Restoran içerisinde Tamir ve Onarım Yapılması Gereken Yer Var mı ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 33,
+    "GroupID": 13,
+    "Question": "İSG (İş Sağlığı Güvenliği )Her Çalışan İçin Mevcut mu ? Restoranda Özlük Dosyaları ile Beraber Muhafaza Ediliyor mu ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 34,
+    "GroupID": 13,
+    "Question": "Çalışan Tüm Personele Gerekli Eğitimler Verilmiş mi ? Tüm Personel İş Sağlığı ve Güvenliğine Duyarlı mı?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 46,
+    "GroupID": 4,
+    "Question": "Restoran Stok Out' a Düşüyor mu ?",
+    "DisplayIndex": 3,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 47,
+    "GroupID": 5,
+    "Question": "Restoran İçerisinde Gergin, Olumsuz Davranış Gösteren Personel Mevcut mu ?",
+    "DisplayIndex": 7,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 48,
+    "GroupID": 7,
+    "Question": "Soğuk Hava Dolabında Kapı Perdesi var mı ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 49,
+    "GroupID": 7,
+    "Question": "Dolap Bakımları Yaptırılmış mı ? Düzenli Olarak Bakımlar Yaptırılıyor mu ?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 50,
+    "GroupID": 7,
+    "Question": "Dolap Set'leri Uygun mu ?( Ocak Altı 0 /Soğuk Hava +1 )",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 51,
+    "GroupID": 30,
+    "Question": "Çalışan Personellerin SGK Girişleri Mevcut mu ? İşe Giriş Bildirgeleri Restoran da Bulunduruluyor mu ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 52,
+    "GroupID": 30,
+    "Question": "Çocuk İşçi Çalıştırılıyor mu ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 53,
+    "GroupID": 30,
+    "Question": "Yasal Mercilerden Çalışma İzni Olmayan Yabancı Uyruklu Personel Çalıştırılıyor mu ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 56,
+    "GroupID": 32,
+    "Question": "Ocak Arkası Flexi Borular Yıpranmış mı? Değişmesi Gerekli mi?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 57,
+    "GroupID": 32,
+    "Question": "Davlumbaz içi Yangın Söndürücüleri Yetkili Servis tarafından Bakımı ve Kontrolü Yapılmış mı ? Kayıt altına alınıyor mu?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 58,
+    "GroupID": 32,
+    "Question": "Personellerimize Yangın Esnasında Yapacakları Konusunda Eğitim Verilmiş mi ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 59,
+    "GroupID": 32,
+    "Question": "Restoranımız da Yangın Tüpleri Var mı ? Periyodik Dolumları Yaptırılmakta mı ?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 60,
+    "GroupID": 13,
+    "Question": "Restoranımızda Bone, Kolluk, Eldiven ve Tek Kullanımlık Misafir Önlüğü Bulunuyor mu ?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 61,
+    "GroupID": 5,
+    "Question": "Restoranımız da Terazi Kalibrasyonları Yapılmakta mı ? Test Ağırlıkları Mevcut mu ?",
+    "DisplayIndex": 8,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 71,
+    "GroupID": 34,
+    "Question": "Tüm fatura ve irsaliyeler merkez ortak alan / IQ Portal a yüklenmiş mi ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 119,
+    "GroupID": 3,
+    "Question": "Tuvaletler Temiz miydi ? Yönlendirme Levhaları Bulunuyor muydu ?",
+    "DisplayIndex": 6,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 120,
+    "GroupID": 3,
+    "Question": "Kağıt ve Sabun Stokları Yeterli miydi ?",
+    "DisplayIndex": 7,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 121,
+    "GroupID": 9,
+    "Question": "Tüm Masalarda Fileksilerde Yan Ürün, Sağlıklı İçecek Görselleri Kullanılıyor mu ? Eksik Olanlar Sipariş Edilip Tamamlanıyor mu ? ( Kırık, Yıpranmış vb Görseller Kullanımdan Kaldırılmış Olmalıdır. )",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 122,
+    "GroupID": 45,
+    "Question": "Ayaklı Dezenfektan Mevcut mu ? Doluluk Oranı Takip Ediliyor mu ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 126,
+    "GroupID": 45,
+    "Question": "Personeller Koruyucu Ekipmanlarını Kullanıyor mu ?  Zamanın da Değişimleri Sağlanıyor mu? (Maske, Eldiven, Kolluk, Siperlik vb )",
+    "DisplayIndex": 5,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 128,
+    "GroupID": 45,
+    "Question": "Aktif Olarak Çalışan Personellerimiz veya Yakınında Covid-19 Tanısı Tespit Edilmiş mi ?",
+    "DisplayIndex": 7,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 129,
+    "GroupID": 45,
+    "Question": "Masalar ve Misafirlerin Temas Ettiği Alanlar Her Kullanımdan Sonra ve Timer Sürelerinde Dezenfekte Ediliyor mu ?",
+    "DisplayIndex": 8,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 130,
+    "GroupID": 46,
+    "Question": "Sigortasız ve A2 Motosiklet Ehliyeti Bulunmayan Personel Çalıştırılıyor mu?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 131,
+    "GroupID": 46,
+    "Question": "İşletmede Markayı Kapsayan Tüm Olay & Vukuat Trafik Kazası vb. Bildirimler Eksiksiz Doğru Şekilde ve Zamanında TD Merkez Birimlerine Bildiriliyor mu ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 132,
+    "GroupID": 46,
+    "Question": "Motorcuların Koruyucu Güvenlik Ekipmanlarının Tam ve Eksiksiz mi ?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 133,
+    "GroupID": 46,
+    "Question": "TD Motorcu Kılık Kıyafet Yönetmeliğinde Yer Alan Kurallara Uyuyor mu ?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 134,
+    "GroupID": 46,
+    "Question": "Restoranda Planlı Motorcu Sayısı Yeterli mi ?",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 135,
+    "GroupID": 46,
+    "Question": "Paket Servis Sürelerinin TD Tarafından Belirtilen Standart Değerin Üzerine Çıkıyor mu ?",
+    "DisplayIndex": 6,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 136,
+    "GroupID": 46,
+    "Question": "TD Tarafından Belirlenen Paket Servis Çalışma Saatlerine Uyuluyor mu ?",
+    "DisplayIndex": 7,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 137,
+    "GroupID": 46,
+    "Question": "1 Aylık Yemek Sepeti Puanlamasının 10 Üzerinden 9 Puan Altında Kalıyor mu ?",
+    "DisplayIndex": 8,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 138,
+    "GroupID": 46,
+    "Question": "Motor Bakımları Düzenli Yaptırılıyor mu ? Belirlenen Servisler Dışında Bakım Onarım Yaptırılmış mı ?",
+    "DisplayIndex": 9,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 139,
+    "GroupID": 46,
+    "Question": "Motosiklet Muayene ve Sigorta İşlemleri Yapılmış mı ? Vaktinde Yapılıyor mu ?",
+    "DisplayIndex": 10,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 140,
+    "GroupID": 46,
+    "Question": "İzinsiz Görsel, Reklam ve Kampanya Uygulanıyor mu ?",
+    "DisplayIndex": 11,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 141,
+    "GroupID": 46,
+    "Question": "Hatalı Sunum, Gramaj Servis Ediliyor mu ? ( Salata, Makarna, Et, vb )",
+    "DisplayIndex": 12,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 142,
+    "GroupID": 46,
+    "Question": "Marka İmajına Zarar Verebilecek ( Temizlik, Sticker vb ) Uygulama Var mı ?",
+    "DisplayIndex": 13,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 143,
+    "GroupID": 46,
+    "Question": "Sürücü Programları Beklene İş Artışını ve Müşteri Beklentilerini Karşılayacak Şekilde Planlanmış mı ?",
+    "DisplayIndex": 14,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 144,
+    "GroupID": 46,
+    "Question": "Motosiklet Kutu ve Taşıma Çantaları Sağlam ve Temiz mi ?",
+    "DisplayIndex": 15,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 145,
+    "GroupID": 46,
+    "Question": "Restorana Gelen Siparişler Standart Sürede Çıkarılıyor mu ?",
+    "DisplayIndex": 16,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 170,
+    "GroupID": 49,
+    "Question": "Sigortasız ve A2 Motosiklet Ehliyeti Bulunmayan Personel Çalıştırılıyor mu?",
+    "DisplayIndex": 1,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 171,
+    "GroupID": 49,
+    "Question": "İşletmede Markayı Kapsayan Tüm Olay & Vukuat Trafik Kazası vb. Bildirimler Eksiksiz Doğru Şekilde ve Zamanında TD Merkez Birimlerine Bildiriliyor mu ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 172,
+    "GroupID": 49,
+    "Question": "Motorcuların Koruyucu Güvenlik Ekipmanlarının Tam ve Eksiksiz mi ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 173,
+    "GroupID": 49,
+    "Question": "TD Motorcu Kılık Kıyafet Yönetmeliğinde Yer Alan Kurallara Uyuyor mu ?",
+    "DisplayIndex": 3,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 174,
+    "GroupID": 49,
+    "Question": "Restoranda Planlı Motorcu Sayısı Yeterli mi ?",
+    "DisplayIndex": 4,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 175,
+    "GroupID": 49,
+    "Question": "Paket Servis Sürelerinin TD Tarafından Belirtilen Standart Değerin Üzerine Çıkıyor mu ?",
+    "DisplayIndex": 5,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 176,
+    "GroupID": 49,
+    "Question": "TD Tarafından Belirlenen Paket Servis Çalışma Saatlerine Uyuluyor mu ?",
+    "DisplayIndex": 6,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 177,
+    "GroupID": 49,
+    "Question": "1 Aylık Yemek Sepeti Puanlamasının 10 Üzerinden 9 Puan Altında Kalıyor mu ?",
+    "DisplayIndex": 7,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 178,
+    "GroupID": 49,
+    "Question": "Motor Bakımları Düzenli Yaptırılıyor mu ? Belirlenen Servisler Dışında Bakım Onarım Yaptırılmış mı ?",
+    "DisplayIndex": 8,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 179,
+    "GroupID": 49,
+    "Question": "Motosiklet Muayene ve Sigorta İşlemleri Yapılmış mı ? Vaktinde Yapılıyor mu ?",
+    "DisplayIndex": 9,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 180,
+    "GroupID": 49,
+    "Question": "İzinsiz Görsel, Reklam ve Kampanya Uygulanıyor mu ?",
+    "DisplayIndex": 10,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 181,
+    "GroupID": 49,
+    "Question": "Hatalı Sunum, Gramaj Servis Ediliyor mu ? ( Salata, Makarna, Et, vb )",
+    "DisplayIndex": 11,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 182,
+    "GroupID": 49,
+    "Question": "Marka İmajına Zarar Verebilecek ( Temizlik, Sticker vb ) Uygulama Var mı ?",
+    "DisplayIndex": 12,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 184,
+    "GroupID": 49,
+    "Question": "Motosiklet Kutu ve Taşıma Çantaları Sağlam ve Temiz mi ?",
+    "DisplayIndex": 14,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 186,
+    "GroupID": 7,
+    "Question": "Soğuk Hava Gün İçerisinde Hiçbir Surette Panelden Kapatılma Yapılıyor mu ?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 187,
+    "GroupID": 13,
+    "Question": "Çalışan tüm personellerin portör muayeneleri tamamlanmış mı ?",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 188,
+    "GroupID": 13,
+    "Question": "İşletme ruhsatı, tarım bakanlığı işletme kayıt belgesi ve diğer gerekli evraklar şubede bulunuyor mu ?",
+    "DisplayIndex": 6,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 189,
+    "GroupID": 13,
+    "Question": "Kızartma Yağı Değişimleri  Sabah Hazırlığında Soğuk Haldeyken Yapılıyor mu ? ( İsg Açısından Kızartma Yağı Soğukken Değişimi Yapılmalıdır. )",
+    "DisplayIndex": 7,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 190,
+    "GroupID": 13,
+    "Question": "Makarna Soğutma işlemi Tavuk Dünyası Standartlarına Uygun Bir Şekilde Yapılıyor mu ? ( Makarna Soğutma İşlemi Sırasında Tencere Taşınmamalı ve Soğutma işlemi Büyük Boy Süzgeç ile Tencereden Alınarak Yapılmalıdır.)",
+    "DisplayIndex": 8,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 191,
+    "GroupID": 34,
+    "Question": "İş avansı harcamaları masraf merkezine zamanında giriş yapılarak bildirim yapılmış mı ? Aylık iş avansı mutabakatı tamamlanmış mı)",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 192,
+    "GroupID": 34,
+    "Question": "Ürün alım ve kullanım / ıskarta formları kontrolleri takip ediliyor mu ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 193,
+    "GroupID": 34,
+    "Question": "SKT Kontrolleri Yapılmış mı ? Düzenli Olarak Yapılıyor mu ?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 194,
+    "GroupID": 34,
+    "Question": "Günlük Stok Kontrolleri Yapılıyor mu ? Restoran Stok Out' a Düşüyor mu ?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 195,
+    "GroupID": 52,
+    "Question": "İşletme ruhsatı, tarım bakanlığı işletme kayıt belgesi ve diğer gerekli evraklar şubede bulunuyor mu ?Resmi kurumlardan gelen tebligat ve resmi evraklar merkeze iletilmiş mi ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 196,
+    "GroupID": 52,
+    "Question": "",
+    "DisplayIndex": 1,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 197,
+    "GroupID": 52,
+    "Question": "",
+    "DisplayIndex": 2,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 198,
+    "GroupID": 52,
+    "Question": "Şube ortak alanda bulunan şube bilgi formu, işletme çizelgesi ve diğer tablolar güncel ve doğru işlenmiş mi ?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 199,
+    "GroupID": 52,
+    "Question": "Resmi kurum ödemeleri ve taksitleri yapılmış mı ? (Reklam, çevre ve temizlik vergileri, ticaret odası ödemeleri, damga vergisi vb. tüm ödemeler )",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 200,
+    "GroupID": 52,
+    "Question": "Banka yatması gereken kasa nakiti ve kasa flotu tutarları doğru mu ?",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 201,
+    "GroupID": 53,
+    "Question": "Covid önlemleri çerçevesinde belirlenen ( Timer uygulaması, Sticker uygulamaları, sosyal mesafe kuralları , Koruyucu ekipman kullanımı ) Uygulamalara uyuluyor mu ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 202,
+    "GroupID": 53,
+    "Question": "Aktif Olarak Çalışan Personellerimiz veya Yakınında Covid-19 Tanısı Tespit Edilmiş mi ? Personellerin vardiya öncesi ateş ölçümleri yapılarak kayıt altına alınıyor mu ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 203,
+    "GroupID": 54,
+    "Question": "Motorcuların Koruyucu Güvenlik Ekipmanlarının Tam ve Eksiksiz mi ? TD Motorcu Kılık Kıyafet Yönetmeliğinde Yer Alan Kurallara Uyuyor mu ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 204,
+    "GroupID": 54,
+    "Question": "Paket platformlarındaki kuryeler paketleri şubeden belirlenen zamanda teslim alıyor mu ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 205,
+    "GroupID": 54,
+    "Question": "1 Aylık Yemek Sepeti, Trendyol ve Getir Puanlamasının 5 Üzerinden 4,5 Puan Altında Kalıyor mu ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 206,
+    "GroupID": 54,
+    "Question": "Hatalı Sunum, Gramaj Servis Ediliyor mu ? ( Salata, Makarna, Et, vb )",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 207,
+    "GroupID": 54,
+    "Question": "Platform yorumları takip edilerek aksaklıklarla ilgili aksiyon alınıyor mu?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 208,
+    "GroupID": 54,
+    "Question": "Restorana Gelen Siparişler Standart Sürede Çıkarılıyor mu ?",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 209,
+    "GroupID": 55,
+    "Question": "Dış Görünüm, Tebala ve Aydınlatmalar Yanıyormu, Temizliği Yapılmış mı ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 210,
+    "GroupID": 55,
+    "Question": "Salon, mutfak ve bahçe alanlarının temizliği yapılmış mı ? Alanlar servise hazır mı ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 211,
+    "GroupID": 55,
+    "Question": "Tuvaletler Temiz miydi ? Yönlendirme Levhaları Bulunuyor muydu ? Kağıt ve Sabun Stokları Yeterli miydi ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 212,
+    "GroupID": 56,
+    "Question": "Sipariş Süreleri ve Takibi Yapılıyor mu ? Müşteriye Servis 10 Dakika İçerisinde Veriliyor mu ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 213,
+    "GroupID": 56,
+    "Question": "Ürün pişirme ve sunumlar uygun mu ? Makarna pişirme ve soslama standartlarına uyuluyor mu ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 214,
+    "GroupID": 57,
+    "Question": "Dış alım Var mı ? Ürün Kaçağı mevcut mu ?( Et, Sos, vb )",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 215,
+    "GroupID": 57,
+    "Question": "Mal Maliyeti Kontrolleri Yapılıyor mu ? Gerekli Aksiyon Alınıyor mu ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 216,
+    "GroupID": 57,
+    "Question": "Yan Ürün / Önerili Satış Konusunda Çalışmalar Yapılıyor mu ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 217,
+    "GroupID": 58,
+    "Question": "Depolama Düzeni, Raflar, Dolaplar Uygun mu ? Palet Kullanımı Varmı ve Uygun mu ? ( Tanımlı Bir İade/Karantina Ürün Alanı Mevcut Olmalı, Yere/Duvara Temas Eden Ürün Olmamalı, Depolarda Koli, Ahşap Palet Yada Ahşap Kasa ile Depolama Yapılmamalı, Mevcut Raf, Dolap ve Paletlerin Yapısı Temizlik&Dezenfeksiyona Uygun ve Bakımlı Olmalıdır.)",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 218,
+    "GroupID": 58,
+    "Question": "Dolap Bakımları Yaptırılmış mı ( restoran içi ve soğuk odalar ) ? Düzenli Olarak Bakımlar Yaptırılıyor mu ? Dolap Set'leri Uygun mu ?( Ocak Altı 0 /Soğuk Hava +1 ), Soğuk hava dolabında kapı perdesi mevcut mu ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 219,
+    "GroupID": 59,
+    "Question": "İlaçlama ve Baca Temizliği Düzenli Yapılmakta mı ? Atık Yağlar Düzenli Teslim Edilmekte ve Tümünün Kayıtları tutulmakta mı ? Hijyen prosedür ve eylem planları asılı mı ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 220,
+    "GroupID": 59,
+    "Question": "Gıda güvenliği defteri eksiksiz olarak doldurulup, takip edilmekte mi ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 221,
+    "GroupID": 59,
+    "Question": "Hijyen ve İSG Belgeleri (İş Sağlığı Güvenliği )Her Çalışan İçin Mevcut mu ? Her personelin portör muayeneleri mevcut mu ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 222,
+    "GroupID": 60,
+    "Question": "Cadde ve AVM de Ücretsiz Alanlar Takip Edilmekte mi ? Görsellerimiz ……… Noktada Sergilenmekte mi ? Verimli Ücretli Alanlarla İlgili Teklifler Değerlendiriliyor mu?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 223,
+    "GroupID": 61,
+    "Question": "Restoran içerisinde Tamir ve Bakım Gerektirecek Ekipman Var mı ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 224,
+    "GroupID": 62,
+    "Question": "Tüm Personel Kurumsal Elbiselimi ? Yedekleri Mevcut mu ? Kişisel Temizlik ve Bakıma Dikkat Ediliyor mu? Personel tavır ve davranışları uygun mu ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 225,
+    "GroupID": 62,
+    "Question": "Personel puantaj tablosu güncel tutuluyor mu, Shift tablosu ile uyumu kontrol edliyor mu, giriş ve çıkış bildirim evrakları tamamlanmış mı ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 226,
+    "GroupID": 63,
+    "Question": "Ocak Arkası Flexi Borular Yıpranmış mı? Değişmesi Gerekli mi?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 227,
+    "GroupID": 63,
+    "Question": "Davlumbaz içi Yangın Söndürücüleri Yetkili Servis tarafından Bakımı ve Kontrolü Yapılmış mı ? Kayıt altına alınıyor mu ? Restoranımız da Yangın Tüpleri Var mı ? Periyodik Dolumları Yaptırılmakta mı ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 228,
+    "GroupID": 63,
+    "Question": "İş sağlı ve Güvenliği açısından olumsuzluk oluşturabilecek uygulamalar mevcut mu ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 229,
+    "GroupID": 55,
+    "Question": "Restoran Yöneticisi günlük yapılması gereken işlerin takibini yapıyor mu, Checklist dolduruluyor mu ?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 230,
+    "GroupID": 13,
+    "Question": "Restoran Kamera Sistemleri Çalışıyormu ?  Kayıt Cihazı Kayıt Yapıyor mu ?",
+    "DisplayIndex": 9,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 231,
+    "GroupID": 13,
+    "Question": "Restoranımız Toplumsal Olaylar Konusunda Bilinçli mi ? Kriz Yönetimi Var mı ?",
+    "DisplayIndex": 10,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 234,
+    "GroupID": 45,
+    "Question": "Tüm çalışan personelin çift doz aşıları tamamlanmış mı ?Aşı kartları şubede muhafaza ediliyor mu ?Aşısız peronel çalıştırılıyor mu ? (Aşısız personel olması durumunda MKP gereğince sigortasız personel kapsamında değerlendirilecektir )",
+    "DisplayIndex": 9,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 235,
+    "GroupID": 66,
+    "Question": "Dış Görünüm, Tabela ve Aydınlatmalar Yanıyor mu, Temizliği Yapılmış mı ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 236,
+    "GroupID": 66,
+    "Question": "Bahçe & Teras,Salon Kapanış Temizliği Yapılmış mı ? Salon Servise Hazır mı ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 237,
+    "GroupID": 66,
+    "Question": "Mutfak Kapanış Temizliği Yapılmış mı ? Mutfak Servise Hazır mı ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 238,
+    "GroupID": 66,
+    "Question": "Tuvaletler Temiz miydi ? Kağıt ve Sabun Stokları Yeterli miydi ? Yönlendirme Levhaları Bulunuyor muydu ?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 239,
+    "GroupID": 66,
+    "Question": "Restoranda çalışan personel sayısı yeterlimi?",
+    "DisplayIndex": 4,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 240,
+    "GroupID": 66,
+    "Question": "Restoran Müdürü, mutfak şefi restoranda mıydı?",
+    "DisplayIndex": 5,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 241,
+    "GroupID": 67,
+    "Question": "Dış Alım Yapılmış mı ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 242,
+    "GroupID": 67,
+    "Question": "SKT Kontrolleri Yapılmış mı ? Düzenli Olarak Yapılıyor mu ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 243,
+    "GroupID": 67,
+    "Question": "Stok out yaşayan ürün var mı?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 244,
+    "GroupID": 68,
+    "Question": "Sipariş Süreleri ve Takibi Yapılıyor mu ? Müşteriye Servis 10 Dakika İçerisinde Veriliyor mu ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 245,
+    "GroupID": 68,
+    "Question": "Kıvamında Pişirilme Yapılıyor mu ? Tabak Son Kontrolleri ve Ürünlerin Doğru Sunumu Yapılıyor mu ? Kenarlarına Yağ/Kir Sıçrayan Tabaklar Masaya Giderken Siliniyor mu?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 246,
+    "GroupID": 68,
+    "Question": "Makarna Pişirme ve Soslama Standartları Doğru Uygulanıyor mu ? Tabak Son Kontrolleri Yapılıp Sıcak Şekilde Servis Ediliyor mu ? Makarna Sosu Uygun Ölçüde ve Homojen Bir Şekilde Karıştırılıyor mu ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 247,
+    "GroupID": 68,
+    "Question": "Boşlar Hızlıca Toplanarak Masalar Yeni Servis için Hazır Edilmekte mi ?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 248,
+    "GroupID": 68,
+    "Question": "Ürünler gramajında servis ediliyor mu? Restoranımız da Terazi Kalibrasyonları Yapılmakta mı ? Test Ağırlıkları Mevcut mu ?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 249,
+    "GroupID": 69,
+    "Question": "Depolama Düzeni, Raflar, Dolaplar Uygun mu ? Palet Kullanımı var mı ve uygun mu ? ( Tanımlı Bir İade/Karantina Ürün Alanı Mevcut Olmalı, Yere/Duvara Temas Eden Ürün Olmamalı, Depolarda Koli, Ahşap Palet Yada Ahşap Kasa ile Depolama Yapılmamalı, Mevcut Raf, Dolap ve Paletlerin Yapısı Temizlik & Dezenfeksiyona Uygun ve Bakımlı Olmalıdır.)",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 250,
+    "GroupID": 69,
+    "Question": "Soğuk Oda ve Donuk Oda hiçbir suretle kapatılmadan 7/24 çalıştırılıyor mu?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 251,
+    "GroupID": 69,
+    "Question": "Dolap Set'leri Uygun mu ?( Ocak Altı 0 /Soğuk Hava +1 )",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 252,
+    "GroupID": 70,
+    "Question": "Restoranımızda Bone, Kolluk, Eldiven ve Tek Kullanımlık Misafir Önlüğü Bulunuyor mu ? Personel tarafından kullanılıyor mu?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 253,
+    "GroupID": 70,
+    "Question": "Tüm Personel Kurumsal Elbiselimi ? Yedekleri Mevcut mu ? Kişisel Temizlik ve Bakıma Dikkat Ediliyor mu?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 254,
+    "GroupID": 71,
+    "Question": "Çalışan Personellerin SGK Girişleri Mevcut mu ? İşe Giriş Bildirgeleri Restoran da Bulunduruluyor mu ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 255,
+    "GroupID": 13,
+    "Question": "Tüm Personel Kurumsal Elbiselimi ? Yedekleri Mevcut mu ? Kişisel Temizlik ve Bakıma Dikkat Ediliyor mu?",
+    "DisplayIndex": 11,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 256,
+    "GroupID": 72,
+    "Question": "Toplam Personel maaş giderleri TD Standart yüzdeleri karşılıyor mu?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 257,
+    "GroupID": 72,
+    "Question": "Ekip Verimlilik Tablosu (VPS) Skoru TD standart ve ortalamalarında seyrediyor mu ? ( Hedef 25 verimlilik )",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 258,
+    "GroupID": 72,
+    "Question": "Ziyaretçi sayısına göre eksik ya da fazla personel ile çalışılıyor mu?",
+    "DisplayIndex": 2,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 259,
+    "GroupID": 72,
+    "Question": "Güncel ziyaretçi sayısına göre istisdam edilen personel ekip verimlilik tablosu ( VPS ) gereğince ortalamanın dışında ise bayi/restoran yöneticisi tarafından gerekli aksiyonlar alınıyor mu?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 261,
+    "GroupID": 72,
+    "Question": "Restoran Çalışan devir hızı nedir ? (Turnover)",
+    "DisplayIndex": 4,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 262,
+    "GroupID": 72,
+    "Question": "Restoran Çalışan devir hızı nedir ? (Turnover)",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 263,
+    "GroupID": 73,
+    "Question": "Personelin kolay ulaşabileceği noktada, uygun donanıma sahip ayrı çalışır durumda el yıkama alanı dizayn edilmiş mi?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 264,
+    "GroupID": 73,
+    "Question": "Ayrı el yıkama olmayan restoranlarda, el yıkama için belirlenen lavobalar, el yıkama lavabosu haline getirilmiş ve doğru olarak kullanılıyor mu?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 265,
+    "GroupID": 73,
+    "Question": "Sıcaklık kontrolleri için uygun ve çalışır durumda termometre/ısı ölçer mevcut mu?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 266,
+    "GroupID": 73,
+    "Question": "Çalışır durumda bir terazi var mı, etkin kullanılıyor mu?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 267,
+    "GroupID": 73,
+    "Question": "Fiziksel risk unsuru malzemeler alanda kullanılıyor/bulunduruluyor mu?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 268,
+    "GroupID": 73,
+    "Question": "Diğer",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 269,
+    "GroupID": 74,
+    "Question": "Üretim/hazırlık alanlarında haşere girişine olanak verecek açıklıklar mevcut mu?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 270,
+    "GroupID": 74,
+    "Question": "Üretim, hazırlık ve depo alanlarında herhangi bir canlı ya da her türlü kemirgen haşere varlığı gözleniyor mu?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 271,
+    "GroupID": 74,
+    "Question": "Diğer",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 272,
+    "GroupID": 75,
+    "Question": "Temizlik ve dezenfeksiyon için TD onaylı ve yeterli kimyasallar mevcut mu?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 273,
+    "GroupID": 75,
+    "Question": "Kullanılan temizlik bezlerinin riskli alanlara göre ayrımı yapılmış ve uygulama etkin midir?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 274,
+    "GroupID": 75,
+    "Question": "Gıda ile temas eden yüzeylerin-ekipmanların (tezgahlar, gıda üretim-hazırlık ekipmanları vb.) temizliği yeterli mi? Gıda ile temas eden küçük ekipmanların gün içi periyodik temizliği-dezenfeksiyonıu takip ediliyor mu?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 275,
+    "GroupID": 75,
+    "Question": "Gıda ile temas etmeyen yüzeylerin-ekipmanların (duvar, tavan, zemin, gider, kapı vb.) temizliği yeterli mi?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 276,
+    "GroupID": 75,
+    "Question": "Diğer",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 277,
+    "GroupID": 75,
+    "Question": "Üretim/hazırlık alanlarında gerekli koruyucular kullanılıyor mu?",
+    "DisplayIndex": 5,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 278,
+    "GroupID": 76,
+    "Question": "Üretim/hazırlık alanlarında gerekli koruyucular kullanılıyor mu?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 279,
+    "GroupID": 76,
+    "Question": "Takı/saat/piercing kullanan, aşırı belirgin şekilde parfüm kullanan, yoğun makyaj yapan personel mevcut mu?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 280,
+    "GroupID": 76,
+    "Question": "Personel gerekli durumda elini uygun bir şekilde yıkıyor/dezenfekte ediyor mu?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 281,
+    "GroupID": 76,
+    "Question": "El yıkama alanında kağıt kavlu, el yıkama sıvısı-dezenfektan yeterli miktarda mevcut mu?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 282,
+    "GroupID": 76,
+    "Question": "Tek kullanımlık eldivenler yeterli miktarda mevcut ve gerekli noktalarda düzgün kullanılıyor mu?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 283,
+    "GroupID": 76,
+    "Question": "Diğer",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 284,
+    "GroupID": 77,
+    "Question": "Soğuk/donuk depo odalarında tespit edilen sıcaklık değerleri uygun mudur? Yıllık periyodik bakımları yaptırılmakta mıdır?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 285,
+    "GroupID": 77,
+    "Question": "Soğuk/donuk dolap alanlarının tespit edilen sıcaklık değerleri uygun mudur?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 286,
+    "GroupID": 77,
+    "Question": "Kullanım alanlarında/depolarda, bozulmuş/ böceklenmiş/küflenmiş ürün mevcut mu?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 287,
+    "GroupID": 78,
+    "Question": "Orijinal SKT içeren etiketi bulunmayan ya da SKt si geçmiş YÜKSEK RİSKLİ ürün mevcut mu? (Et, Tavuk, Salata Sosları)",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 288,
+    "GroupID": 78,
+    "Question": "İkinci raf ömrü süresi dolmuş YÜKSEK RİSKLİ ürün mevcut mu?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 289,
+    "GroupID": 78,
+    "Question": "Orijinal SKT içeren etiketi bulunmayan ya da SKt si geçmiş DÜŞÜK RİSKLİ ürün mevcut mu?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 290,
+    "GroupID": 78,
+    "Question": "İkinci raf ömrü süresi dolmuş DÜŞÜK RİSKLİ ürün mevcut mu?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 291,
+    "GroupID": 78,
+    "Question": "Diğer",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 292,
+    "GroupID": 79,
+    "Question": "Depolarda/üretim/hazırlık alanlarında görülen; açılmış, aktarılmış, üretilmiş (mamul/yarı mamul) vb. ürünlerde raf ömrü izlemek için etiketleme uygun bir şekilde raf ömrüne göre yapılıyor mu?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 293,
+    "GroupID": 79,
+    "Question": "Diğer",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 294,
+    "GroupID": 80,
+    "Question": "Gıda Güvenliği Kontrol Defteri uygun bir şekilde dolduruluyor ve izlenebilirlik formu dolduruluyor mu?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 295,
+    "GroupID": 80,
+    "Question": "Diğer",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 296,
+    "GroupID": 81,
+    "Question": "TPM Yağ ölçüm cihazı mevcut ve kızartma yağları iyi kalitede, düzenli kontrol ediliyor ve yenileniyor mu? Ziyaret esnasında ölçülen değer kritik limitlerin altında mı?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 297,
+    "GroupID": 81,
+    "Question": "Riskli yiyecekler için güvenli pişirme sıcaklıkları sağlanıyor mu?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 298,
+    "GroupID": 81,
+    "Question": "Sıcak/soğuk sunumu yapılarak, bekletilen yiyeceklerin, bekleme sırasında sıcaklıkları kontrol edilerek, kayıtları tutuluyor mu?  Bekleyen yiyeceklerin sıcaklıkları uygun mu?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 299,
+    "GroupID": 81,
+    "Question": "Donuk ürünlerin çözdürülmesi işlemi uygun soğuk dolaplarda mı yapılıyor? Oda ısısında kontrolsüz çözdürme yapılıyor mu?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 300,
+    "GroupID": 81,
+    "Question": "Üretimde kullanılan ve direk tüketilen (pişirilmeden) meyve/sebzeleler uygun şekilde yıkanıyor/ dezenfekte ediliyor mu, kayıtları mevcut mu?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 301,
+    "GroupID": 81,
+    "Question": "Çarpraz bulaşma gözlemleniyor mu?",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 302,
+    "GroupID": 81,
+    "Question": "Potansiyel çarpraz bulaşma gözlemleniyor mu?",
+    "DisplayIndex": 6,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 303,
+    "GroupID": 81,
+    "Question": "Onaysız ve TD Merkez bilgisi olmayan gıda ürünlerinin kullanımı yapılıyor mu? (Dış alım) Et ürünlerinde önceden pişirme-bekletme uygulanıyor mu?",
+    "DisplayIndex": 7,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 304,
+    "GroupID": 81,
+    "Question": "Diğer",
+    "DisplayIndex": 8,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 305,
+    "GroupID": 82,
+    "Question": "Motorsiklet taşıma kutusu ve ürün taşıma çantası genel temizliğini sağlanıyor mu?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 306,
+    "GroupID": 82,
+    "Question": "Tek kullanımlık paket servis malzemeleri kullanım alanında bulaşmalardan korunarak muhafaza ediliyor mu?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 307,
+    "GroupID": 82,
+    "Question": "Diğer",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 308,
+    "GroupID": 83,
+    "Question": "Sosyal Medya Platformları Yorumları ve Puanları  (Google, Facebook, İnstagram vb) Takip Ediliyormu",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 309,
+    "GroupID": 84,
+    "Question": "ZİYARET SONRASINDAKİ  (AY)  ŞUBE PUANI",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 310,
+    "GroupID": 84,
+    "Question": "BAŞLANGIÇ TARİH SAAT      :",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 311,
+    "GroupID": 85,
+    "Question": "BAŞLANGIÇ TARİH SAAT      :",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 312,
+    "GroupID": 85,
+    "Question": "BİTİŞ TARİH SAAT      :",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 313,
+    "GroupID": 85,
+    "Question": "ZİYARET ÖNCESİNDE Kİ (AY) ŞUBE PUANI",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 314,
+    "GroupID": 85,
+    "Question": "ZİYARET SONRASINDAKİ  (AY)  ŞUBE PUANI",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 315,
+    "GroupID": 85,
+    "Question": "TESPİT EDİLEN EKSİKLER",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 316,
+    "GroupID": 85,
+    "Question": "AKSİYON ALINAN EKSİKLER",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 317,
+    "GroupID": 85,
+    "Question": "TEKRARLAYAN EKSİKLER",
+    "DisplayIndex": 6,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 318,
+    "GroupID": 85,
+    "Question": "ZİYARET SEBEBİ ( 1 - SAHA DESTEK -  2.  ŞUBE AÇILIŞ )",
+    "DisplayIndex": 7,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 319,
+    "GroupID": 85,
+    "Question": "SKT KONTROL VE EĞİTİMLERİ",
+    "DisplayIndex": 8,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 320,
+    "GroupID": 85,
+    "Question": "ÜRÜN PİŞİRİM KONTROLLERİ",
+    "DisplayIndex": 9,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 321,
+    "GroupID": 85,
+    "Question": "SUNUM KONTROL VE EĞİTİMLERİ",
+    "DisplayIndex": 10,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 322,
+    "GroupID": 85,
+    "Question": "MAKARNA PİŞİRİM SUNUM VE KONTROLLERİ",
+    "DisplayIndex": 11,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 323,
+    "GroupID": 85,
+    "Question": "SALATA SUNUM VE STARDARTLAR  KONTROL VE EĞİTİMİ",
+    "DisplayIndex": 12,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 324,
+    "GroupID": 85,
+    "Question": "ÇORBA  & LİMONATA KONTROL",
+    "DisplayIndex": 13,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 325,
+    "GroupID": 85,
+    "Question": "REÇETE GRAMAJ KULLANIMI KONTROL VE EĞİTİMİ",
+    "DisplayIndex": 14,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 326,
+    "GroupID": 85,
+    "Question": "İLK GİREN İLK ÇIKAR KURALI",
+    "DisplayIndex": 15,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 327,
+    "GroupID": 85,
+    "Question": "HİJYEN KONTROL VE EĞİTİMİ",
+    "DisplayIndex": 16,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 328,
+    "GroupID": 85,
+    "Question": "HİJYEN EKİPMANLARI KONTROL",
+    "DisplayIndex": 17,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 329,
+    "GroupID": 85,
+    "Question": "STOK KONTROL VE EĞİTİMİ",
+    "DisplayIndex": 18,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 330,
+    "GroupID": 85,
+    "Question": "RAF DÜZENİ VE KONTROLLERİ",
+    "DisplayIndex": 19,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 331,
+    "GroupID": 85,
+    "Question": "DOLAP DERECELERİ",
+    "DisplayIndex": 20,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 332,
+    "GroupID": 85,
+    "Question": "BAKIM ONARIM İHTİYAÇLARI",
+    "DisplayIndex": 21,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 333,
+    "GroupID": 85,
+    "Question": "EKİPMAN STANDARTLARI",
+    "DisplayIndex": 22,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 334,
+    "GroupID": 85,
+    "Question": "GIDA GÜVENLİK DEFTERİ EĞİTİM VE KONTROLLERİ",
+    "DisplayIndex": 23,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 335,
+    "GroupID": 85,
+    "Question": "ÇAPRAZ KONTİMİNASYON KONTROLÜ",
+    "DisplayIndex": 24,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 336,
+    "GroupID": 85,
+    "Question": "BEZ KULLANIM VE STANDARTLARI",
+    "DisplayIndex": 25,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 337,
+    "GroupID": 85,
+    "Question": "YANGIN BATTANİYESİ EĞİTİM VE KONTROLÜ",
+    "DisplayIndex": 26,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 338,
+    "GroupID": 85,
+    "Question": "AÇILIŞ VE KAPANIŞ KONTROLLERİ",
+    "DisplayIndex": 27,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 339,
+    "GroupID": 86,
+    "Question": "ŞUBE TÜRÜ",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 340,
+    "GroupID": 86,
+    "Question": "ŞUBE ADI:",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 341,
+    "GroupID": 86,
+    "Question": "ŞUBE MÜDÜRÜ:",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 342,
+    "GroupID": 86,
+    "Question": "MAĞAZA MAİL:",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 343,
+    "GroupID": 86,
+    "Question": "BÖLGE YÖNETİCİSİ   :",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 344,
+    "GroupID": 86,
+    "Question": "ZİYARETİ YAPAN ŞEF:",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 345,
+    "GroupID": 87,
+    "Question": "Zoom Üzerinden yapılan İDK ile alakalı fotoğraflar.",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 346,
+    "GroupID": 88,
+    "Question": "Şube genel durumu, şubesel fırsatlar ve analizler",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 347,
+    "GroupID": 89,
+    "Question": "İDK'da konuşulan detaylar ve aksiyon alınacak konular ile alınacak aksiyonlar.",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 348,
+    "GroupID": 90,
+    "Question": "Ekip Sayısı Yeterlimi",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 349,
+    "GroupID": 90,
+    "Question": "Stok Değerleri Bir Sonraki Sevkiyata Kadar Yeterlimi ( Stok Out’a Düşüyor u ? )",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 350,
+    "GroupID": 90,
+    "Question": "Ekipmanların Bakımları Düzenli Yapılıyor mu ? Çalışmayan Ekipman Var mı ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 351,
+    "GroupID": 91,
+    "Question": "Ekip Sayısı Yeterli mi? Ekip Verimlilik Tablosu (VPS) Skoru TD standart ve ortalamalarında seyrediyor mu ? (HEDEF 25 verimlilik )",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 352,
+    "GroupID": 91,
+    "Question": "Stok Seviyeleri Bir Sonraki Sevkiyata Kadar Yetecek durumda mı?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 353,
+    "GroupID": 91,
+    "Question": "Ekipmanların Bakımları Düzenli Yapılıyor mu ? Ekipmanlar çalışır durumda mı?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 354,
+    "GroupID": 92,
+    "Question": "Dış Görünüm, Tebala ve Aydınlatmalar Yanıyor mu? Temizliği Yapılmış mı ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 355,
+    "GroupID": 92,
+    "Question": "Salon Kapanış Temizliği Yapılmış mı ? Salon Açılışa Hazır mı ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 356,
+    "GroupID": 92,
+    "Question": "Bahçe & Teras Temizliği Yapılmış mı ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 357,
+    "GroupID": 92,
+    "Question": "Mutfak Kapanış Temizliği Yapılmış mı ? Mutfak Servise Hazır mı ?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 358,
+    "GroupID": 92,
+    "Question": "Dekor ve Oturma Grupları Temiz ve Bakımlımıydı ?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 359,
+    "GroupID": 92,
+    "Question": "Tuvaletler Temiz miydi ? Kağıt ve Sabun Stokları Yeterli miydi ? Yönlendirme Levhaları Bulunuyor muydu ?",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 360,
+    "GroupID": 93,
+    "Question": "Ekip Sayısı Yeterli mi? Ekip Verimlilik Tablosu (VPS) Skoru TD standart ve ortalamalarında seyrediyor mu ? (HEDEF 25 verimlilik )",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 361,
+    "GroupID": 93,
+    "Question": "Stok Seviyeleri Bir Sonraki Sevkiyata Kadar Yetecek durumda mı?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 362,
+    "GroupID": 93,
+    "Question": "Ekipmanların Bakımları Düzenli Yapılıyor mu ? Ekipmanlar çalışır durumda mı?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 363,
+    "GroupID": 93,
+    "Question": "Tüm Personel Kurumsal Elbiselimi ? Yedekleri Mevcut mu ? Kişisel Temizlik ve Bakıma Dikkat Ediliyor mu?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 364,
+    "GroupID": 93,
+    "Question": "Ürünlerin tamamı TD depodan yada onaylı tedarikçilerimizden sipariş verilmiş mi?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 365,
+    "GroupID": 93,
+    "Question": "STT kontrolleri yapılmış mı? STT süresi dolmuş ürünler imha edilmiş mi?",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 366,
+    "GroupID": 93,
+    "Question": "İkinci raf ömrü takip tabloları doldurulmuş mu? İkinci raf etiketlemeleri yapılmış mı?",
+    "DisplayIndex": 6,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 367,
+    "GroupID": 93,
+    "Question": "Restoranımızda Bone, Kolluk, Eldiven ve Tek Kullanımlık Misafir Önlüğü Bulunuyor mu ?",
+    "DisplayIndex": 7,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 368,
+    "GroupID": 94,
+    "Question": "Servis personeli ürün adını söyleyerek yan ürün ve sağlıklı içecek önerisinde bulunuyor mu? Tüm personellerde önerili satış kartı varmı? On altın kural uygulanıyor mu?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 369,
+    "GroupID": 94,
+    "Question": "Tüm Masalarda Fileksilerde Yan Ürün, Sağlıklı İçecek Görselleri Kullanılıyor mu ? Eksik Olanlar Sipariş Edilip Tamamlanıyor mu ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 370,
+    "GroupID": 95,
+    "Question": "Sipariş Süreleri ve Takibi Yapılıyor mu ? Müşteriye Servis 10 Dakika İçerisinde Veriliyor mu ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 371,
+    "GroupID": 95,
+    "Question": "Müşteriye Servis 10 Dakika İçerisinde Veriliyor mu ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 372,
+    "GroupID": 95,
+    "Question": "Kıvamında Pişirilme Yapılıyor mu ? Tabak Son Kontrolleri ve Ürünlerin Doğru Sunumu Yapılıyor mu ? Kenarlarına Yağ/Kir Sıçrayan Tabaklar Masaya Giderken Siliniyor mu?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 373,
+    "GroupID": 95,
+    "Question": "Makarna Pişirme ve Soslama Standartları Doğru Uygulanıyor mu ? Tabak Son Kontrolleri Yapılıp Sıcak Şekilde Servis Ediliyor mu ? Makarna Sosu Uygun Ölçüde ve Homojen Bir Şekilde Karıştırılıyor mu ?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 374,
+    "GroupID": 95,
+    "Question": "Boşlar Hızlıca Toplanarak Masalar Yeni Servis için Hazır Edilmekte mi ?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 375,
+    "GroupID": 95,
+    "Question": "Ürünler gramajında servis ediliyor mu? Restoranımız da Terazi Kalibrasyonları Yapılmakta mı ? Test Ağırlıkları Mevcut mu ?",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 376,
+    "GroupID": 96,
+    "Question": "Şube ürün kullanım farklarıyla alakalı aksiyon alınıyor mu?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 377,
+    "GroupID": 96,
+    "Question": "Mal Maliyeti Kontrolleri Yapılıyor mu ? Gerekli Aksiyon Alınıyor mu ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 378,
+    "GroupID": 97,
+    "Question": "Depolama Düzeni, Raflar, Dolaplar Uygun mu ? Palet Kullanımı Varmı ve Uygun mu ?( Tanımlı Bir İade/Karantina Ürün Alanı Mevcut Olmalı, Yere/Duvara Temas Eden Ürün Olmamalı, Depolarda Koli, Ahşap Palet Yada Ahşap Kasa ile Depolama Yapılmamalı, Mevcut Raf, Dolap ve Paletlerin Yapısı Temizlik&Dezenfeksiyona Uygun ve Bakımlı Olmalıdır.)",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 379,
+    "GroupID": 97,
+    "Question": "Soğuk Hava Dolabında Kapı Perdesi var mı ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 380,
+    "GroupID": 97,
+    "Question": "Mal Kabulü Esnasında Ürünlerin Kontrolü Talimata Uygun Yapılıyor mu?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 381,
+    "GroupID": 97,
+    "Question": "Soğuk Oda ve Donuk Oda hiçbir suretle kapatılmadan 7/24 çalıştırılıyor mu?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 382,
+    "GroupID": 97,
+    "Question": "Dolap Set'leri Uygun mu ?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 383,
+    "GroupID": 98,
+    "Question": "İlaçlama ve Baca Temizliği Düzenli Yapılmakta mı ? Atık Yağlar Düzenli Teslim Edilmekte ve Tümünün Kayıtları tutulmakta mı ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 384,
+    "GroupID": 98,
+    "Question": "Yasal zorunluluk olan İSG (İş sağlığı güvenliği sertifikası), hijyen sertifikası, sağlık raporu, akciğer filmi, portör muayenesi, hepatit b testi, kan sayım sonuç testleri her çalışan için mevcut mu? Restoranda Özlük Dosyaları ile Beraber Muhafaza Ediliyor mu ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 385,
+    "GroupID": 98,
+    "Question": "İşletme ruhsatı, tarım bakanlığı işletme kayıt belgesi şubede bulunuyor mu ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 386,
+    "GroupID": 98,
+    "Question": "Tavuk Dünyası Gıda Güvenliği Kontrol Defteri düzenli olarak dolduruluyor mu?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 387,
+    "GroupID": 98,
+    "Question": "Mutfak Hijyen planı Uygun Yerde Asılı ve Personel Konulara Vakıf mı ?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 388,
+    "GroupID": 98,
+    "Question": "Çalışan Personellerin SGK Girişleri Mevcut mu ? İşe Giriş Bildirgeleri Restoran da Bulunduruluyor mu ?",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 389,
+    "GroupID": 98,
+    "Question": "Çalışanların tamamı 16 yaşından büyük mü?",
+    "DisplayIndex": 6,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 390,
+    "GroupID": 98,
+    "Question": "Yabancı Uyruklu Personelin Yasal Mercilerden Çalışma İzni var mı?",
+    "DisplayIndex": 7,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 391,
+    "GroupID": 99,
+    "Question": "Cadde ve AVM de Ücretsiz Alanlar Takip Edilmekte mi ? Görsellerimiz Sergilenmekte mi ? Verimli Ücretli Alanlarla İlgili Teklifler Değerlendiriliyor mu?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 392,
+    "GroupID": 99,
+    "Question": "Görseller, Reklam ve uygulanan kampanyalar TD pazarlama onaylı mı?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 393,
+    "GroupID": 99,
+    "Question": "Yıpranmış ve eski tasarım Görseller Kullanımdan Kaldırılmış mı?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 394,
+    "GroupID": 99,
+    "Question": "Google Puanlaması 5 Üzerinden 4,5 Puan üzerinde mi? Son iki haftaya ait olumsuz yorum ve puan var mı?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 395,
+    "GroupID": 100,
+    "Question": "Ocak Arkası Flexi Boruların fiziksel durumu İSG açısından uygun mu?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 396,
+    "GroupID": 100,
+    "Question": "Davlumbaz içi Yangın Söndürücü tüpünün bakımı yapılarak SKT bandrolü yapıştırılmış mı?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 397,
+    "GroupID": 100,
+    "Question": "Restoranımız da Yangın Tüpleri Var mı ? Periyodik Dolumları Yaptırılmakta mı ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 398,
+    "GroupID": 100,
+    "Question": "Kızartma Yağı Değişimleri Sabah Hazırlığında Soğuk Haldeyken Yapılıyor mu ? ( İsg Açısından Kızartma Yağı Soğukken Değişimi Yapılmalıdır.) Makarna Soğutma işlemi Tavuk Dünyası Standartlarına Uygun Bir Şekilde Yapılıyor mu ?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 399,
+    "GroupID": 100,
+    "Question": "Restoran Kamera Sistemleri Çalışıyormu ? Kayıt Cihazı Kayıt Yapıyor mu ?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 400,
+    "GroupID": 101,
+    "Question": "Çalışan kuryelerin A2 motorsiklet ehliyeti ve SGK Girişleri Mevcut mu ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 401,
+    "GroupID": 101,
+    "Question": "Motorcuların Koruyucu Güvenlik Ekipmanlarının Tam ve Eksiksiz mi ? Motosiklet Kutu ve Taşıma Çantaları Sağlam ve Temiz mi ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 402,
+    "GroupID": 101,
+    "Question": "Restoranda Planlı Motorcu Sayısı Yeterli mi ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 403,
+    "GroupID": 101,
+    "Question": "Yemek Sepeti Puanlaması 5 Üzerinden 4,5 Puan üzerinde Kalıyor mu ?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 404,
+    "GroupID": 101,
+    "Question": "Trendyol Puanlaması 5 Üzerinden 4,5 Puan üzerinde Kalıyor mu ?",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 405,
+    "GroupID": 101,
+    "Question": "Motor Bakımları Düzenli olarak Honda yetkili servisinde Yaptırılıyor mu ?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 406,
+    "GroupID": 101,
+    "Question": "Motosiklet Muayene ve Sigorta İşlemleri Yapılmış mı ?",
+    "DisplayIndex": 7,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 407,
+    "GroupID": 101,
+    "Question": "TD Tarafından Belirlenen Paket Servis Çalışma Saatlerine Uyuluyor mu ?",
+    "DisplayIndex": 8,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 408,
+    "GroupID": 102,
+    "Question": "İSİM",
+    "DisplayIndex": 0,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 409,
+    "GroupID": 102,
+    "Question": "ŞEHİR",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 410,
+    "GroupID": 102,
+    "Question": "ŞUBE",
+    "DisplayIndex": 2,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 411,
+    "GroupID": 102,
+    "Question": "REFAKAT NEDENİ",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 412,
+    "GroupID": 102,
+    "Question": "ŞUBEYE GİRİŞ TARİHİ",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 413,
+    "GroupID": 102,
+    "Question": "ŞUBEDEN ÇIKIŞ TARİHİ",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 414,
+    "GroupID": 102,
+    "Question": "ŞUBEYE GİRİŞ SAAT",
+    "DisplayIndex": 6,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 415,
+    "GroupID": 102,
+    "Question": "ŞUBEDEN ÇIKIŞ SAAT",
+    "DisplayIndex": 7,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 416,
+    "GroupID": 102,
+    "Question": "BÖLGE YÖNETİCİSİ",
+    "DisplayIndex": 8,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 417,
+    "GroupID": 102,
+    "Question": "ŞUBEDEkİ SÜRE / GÜN",
+    "DisplayIndex": 9,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 418,
+    "GroupID": 102,
+    "Question": "OFF",
+    "DisplayIndex": 10,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 419,
+    "GroupID": 102,
+    "Question": "ALINAN ALACAK İZİN",
+    "DisplayIndex": 11,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 420,
+    "GroupID": 102,
+    "Question": "AÇIKLAMA",
+    "DisplayIndex": 12,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 421,
+    "GroupID": 101,
+    "Question": "Getir Puanlaması 5 Üzerinden 4,5 Puan üzerinde Kalıyor mu ?",
+    "DisplayIndex": 6,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 422,
+    "GroupID": 103,
+    "Question": "DEPO DOLAP ISI DERECELERİ UYGUN MU?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 423,
+    "GroupID": 103,
+    "Question": "DEPO DOLAP RAF DÜZENİ VE TEMİZLİĞİ UYGUN MU?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 424,
+    "GroupID": 103,
+    "Question": "MUTFAK  GENEL ALARAK TEMİZ  Mİ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 425,
+    "GroupID": 103,
+    "Question": "AKŞAMDAN TAVUK KÜVET DEYİŞİMİ YAPİLYOR MU?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 426,
+    "GroupID": 103,
+    "Question": "PATATES KIZARMA FRİTÖZ'ÜN YAĞ SEVİYESİ VE DERECE DEGERLERİ UYGUN MU?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 427,
+    "GroupID": 103,
+    "Question": "DONUK ÜRÜN ÇÖZÜNDÜRME PROSEDÜRÜNE UYULYORMU?",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 428,
+    "GroupID": 103,
+    "Question": "İKİNCİ RAF ÖMRÜ ETİKET TAKİBİ YAPILMAKTA MI?",
+    "DisplayIndex": 6,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 429,
+    "GroupID": 103,
+    "Question": "MUTFAK İÇERİSİNDE BULUNAN DOLAPLAR ÇALILIŞ DURUMDA MI?",
+    "DisplayIndex": 7,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 430,
+    "GroupID": 103,
+    "Question": "DOBLUMBAZ VE FİLTLELERİN TEMİZLİĞİ YAPILMAKTA MI?",
+    "DisplayIndex": 8,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 431,
+    "GroupID": 103,
+    "Question": "TERAZİ MEVCUT MU ,ÇALİŞİR DURUMDA MI?",
+    "DisplayIndex": 9,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 432,
+    "GroupID": 103,
+    "Question": "BEZ KULLANIM VE DEZENFEKTENLİ SOLÜSYON  UYGULAMASI MEVCUT MU?",
+    "DisplayIndex": 10,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 433,
+    "GroupID": 103,
+    "Question": "ÜRÜN GRAMAJLARINA VE RECETEYE UYULYOR MU?",
+    "DisplayIndex": 11,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 434,
+    "GroupID": 103,
+    "Question": "DOĞRU PİŞİRME TEKNİĞİ UYGUNANIYOR MU ?",
+    "DisplayIndex": 12,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 435,
+    "GroupID": 103,
+    "Question": "MAKARNA PİŞİRM VE STANDARTLARA DOĞRU UYGULAMA YAPILIYOR MU ?",
+    "DisplayIndex": 13,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 436,
+    "GroupID": 103,
+    "Question": "GÜN İÇİNDE YETERLİ STOK HAZIRLIGI YAPILIYOR MU?",
+    "DisplayIndex": 14,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 437,
+    "GroupID": 103,
+    "Question": "MUTFAKTAN ÇIKAN ÜRÜN SERVİSE HIZLICA ALINIYOR MU?",
+    "DisplayIndex": 15,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 438,
+    "GroupID": 103,
+    "Question": "SKT E KONTÜROLLERİ YAPILIYOR MU ?",
+    "DisplayIndex": 16,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 439,
+    "GroupID": 103,
+    "Question": "GIDA GÜVENLİK DEFTERİ NE KAYITLAR TUTULUYOR MU?",
+    "DisplayIndex": 17,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 440,
+    "GroupID": 103,
+    "Question": "KIMYASAL MADDELER  DOGRU YERDE MUHAFAZA EDİLİYOR MU?",
+    "DisplayIndex": 18,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 441,
+    "GroupID": 103,
+    "Question": "KURU DEPO DÜZENLİ VE TEMİZ Mİ?",
+    "DisplayIndex": 19,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 442,
+    "GroupID": 103,
+    "Question": "SEBZE DEZENFEKTEN İÇİN KLOR TABLET KULLANILIYOR MU?",
+    "DisplayIndex": 20,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 443,
+    "GroupID": 103,
+    "Question": "BONBAJLI ÜRÜNLER MEVCUT MU?",
+    "DisplayIndex": 21,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 444,
+    "GroupID": 103,
+    "Question": "YANGIN BATTANİYESİ MEVCUT MU ?",
+    "DisplayIndex": 22,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 445,
+    "GroupID": 103,
+    "Question": "HİJYEN EKİPMANLARI ( BONE,KOLUK,GOLOŞ,MAVİ ELDİVEN ) MEVCUT MU ?",
+    "DisplayIndex": 23,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 446,
+    "GroupID": 103,
+    "Question": "ECZA DOLABI MEVCUT MU?",
+    "DisplayIndex": 24,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 447,
+    "GroupID": 103,
+    "Question": "ÇORBALAR GÜNLÜK VE RECETEYE GÖRE YAPILIYOR MU?",
+    "DisplayIndex": 25,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 448,
+    "GroupID": 103,
+    "Question": "MUTFAK PERSONELIN KİYAFETİ UYGUN MU?",
+    "DisplayIndex": 26,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 449,
+    "GroupID": 103,
+    "Question": "ATIŞ VE PİŞİRİM KAŞIKLARIN KULLANIMINA DİKKAT EDİLİYOR MU?",
+    "DisplayIndex": 27,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 450,
+    "GroupID": 103,
+    "Question": "TAVA SAYASI YETERLI Mİ,DEFORMASYON DURUMU?",
+    "DisplayIndex": 28,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 451,
+    "GroupID": 103,
+    "Question": "MUTFAK EKİPMALARI OCAK,IZGARA,M.FRİTÖZ'Ü ,P.FRİTÖZ'Ü,DOLAPLAR, ÇALIŞIR DURUMDA MI?",
+    "DisplayIndex": 29,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 452,
+    "GroupID": 103,
+    "Question": "DOLAP KAPI LASTIKLERİ DEFORME MUVCUT MU?",
+    "DisplayIndex": 30,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 453,
+    "GroupID": 103,
+    "Question": "MUTFAK DOLAP ISI DERECELERİ UYGUN MU ?",
+    "DisplayIndex": 31,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 454,
+    "GroupID": 103,
+    "Question": "MUTFAKT ALANINDA TALİMATLAR VE PROSEDÜRLER  MEVCUT MU ?",
+    "DisplayIndex": 32,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 455,
+    "GroupID": 103,
+    "Question": "BULAŞIK MAKİNASININ PROSEDÜRLERE GÖRE TEMİZLİGİ YAPILIYOR MU?",
+    "DisplayIndex": 33,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 456,
+    "GroupID": 103,
+    "Question": "DIŞ ALIM YAPILIYOR MU?",
+    "DisplayIndex": 34,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 457,
+    "GroupID": 103,
+    "Question": "PİŞİRME VE SUNUM EĞİTİMİ VERİLDİ Mİ?",
+    "DisplayIndex": 35,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 458,
+    "GroupID": 104,
+    "Question": "Ramazan için ekipmanlar yeterli mi ?",
+    "DisplayIndex": 0,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 459,
+    "GroupID": 104,
+    "Question": "Ramazan görselleri uygun yerde sergileniyor mu ?",
+    "DisplayIndex": 1,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 460,
+    "GroupID": 104,
+    "Question": "İftar saati için gerekli aksiyonlar alınmakta mı ?",
+    "DisplayIndex": 2,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 461,
+    "GroupID": 91,
+    "Question": "Ürünlerin tamamı TD depodan yada onaylı tedarikçilerimizden sipariş verilmiş mi?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 462,
+    "GroupID": 91,
+    "Question": "STT kontrolleri yapılmış mı? STT süresi dolmuş ürünler imha edilmiş mi? İkinci raf ömrü takip tabloları doldurulmuş mu? İkinci raf etiketlemeleri yapılmış mı?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 463,
+    "GroupID": 91,
+    "Question": "Tüm Personel Kurumsal Elbiselimi ? Yedekleri Mevcut mu ? Kişisel Temizlik ve Bakıma Dikkat Ediliyor mu?",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 464,
+    "GroupID": 91,
+    "Question": "Restoranımızda Bone, Kolluk, Eldiven ve Tek Kullanımlık Misafir Önlüğü Bulunuyor mu ?",
+    "DisplayIndex": 6,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 465,
+    "GroupID": 93,
+    "Question": "Donuk tavuk stokları toplam tavuk stoğunun( Kırmızı Et ve Izgara Pirzola Hariç) %10 u kadar mı? Ürünlerimizin kalitesini ve lezzetini korumak için taze tavuk ürünü kullanımı önemli ve gereklidir",
+    "DisplayIndex": 8,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 466,
+    "GroupID": 105,
+    "Question": "Üretim ve depolama alanlarında fiziksel risk unsuru malzemeler kullanılıyor/bulunduruluyor mu?",
+    "DisplayIndex": 0,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 467,
+    "GroupID": 106,
+    "Question": "Çöp kutuları el teması olmadan açılabilir, kapaklı, tek kullanımlık çöp poşetli ve temiz midir?",
+    "DisplayIndex": 0,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 468,
+    "GroupID": 107,
+    "Question": "Üretim/hazırlık alanlarında haşere girişine olanak verecek açıklıklar mevcut mu? Haşere mücadele için gerekli önlemler alınıyor mu?",
+    "DisplayIndex": 0,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 469,
+    "GroupID": 108,
+    "Question": "Kullanılan temizlik bezlerinin riskli alanlara göre ayrımı yapılmış ve uygulama etkin midir?",
+    "DisplayIndex": 0,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 470,
+    "GroupID": 109,
+    "Question": "Çalışanların gıda güvenliği ve hijyen bilgisi yeterli mi?",
+    "DisplayIndex": 0,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 471,
+    "GroupID": 110,
+    "Question": "Kullanım alanlarında/depolarda, bozulmuş/ böceklenmiş/küflenmiş ürün mevcut mu?",
+    "DisplayIndex": 0,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 472,
+    "GroupID": 111,
+    "Question": "Donuk ürünlerin çözdürülmesi işlemi uygun soğuk dolaplarda mı yapılıyor? Oda ısısında kontrolsüz çözdürme yapılıyor mu?",
+    "DisplayIndex": 0,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 473,
+    "GroupID": 112,
+    "Question": "İlkyardım dolabı/çantası mevcut ve içinde yeterli, uygun malzeme var mı?",
+    "DisplayIndex": 0,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 474,
+    "GroupID": 113,
+    "Question": "Tek kullanımlık paket servis malzemeleri kullanım alanında bulaşmalardan korunarak muhafaza ediliyor mu?",
+    "DisplayIndex": 0,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 475,
+    "GroupID": 114,
+    "Question": "Turn Over oranı kaçtır? Oranın kontrol altında tutulması için yapılan çalışmalar nelerdir?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 476,
+    "GroupID": 114,
+    "Question": "Personel özlük hakları korunuyor mu? Mola saatleri vb. Takibi yapılıyor mu?",
+    "DisplayIndex": 1,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 477,
+    "GroupID": 114,
+    "Question": "Ekip sayısı sezonsallık vb. Koşullar gözetilerek ayarlanmış mı? Çekirdek kadro yedeklenmiş mi?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 478,
+    "GroupID": 114,
+    "Question": "Çalışma saatleri makul şekilde ayarlanmış mı?",
+    "DisplayIndex": 3,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 479,
+    "GroupID": 114,
+    "Question": "Performans değerlendirme ve sonucunda ödüllendirme şeffaf bir şekilde uygulanıyor mu?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 480,
+    "GroupID": 115,
+    "Question": "Turn Over oranı kaçtır? Oranın kontrol altında tutulması için yapılan çalışmalar nelerdir?",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 481,
+    "GroupID": 115,
+    "Question": "Personel özlük hakları korunuyor mu? Mola saatleri vb. Takibi yapılıyor mu?",
+    "DisplayIndex": 1,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 482,
+    "GroupID": 115,
+    "Question": "Ekip sayısı sezonsallık vb. Koşullar gözetilerek ayarlanmış mı? Çekirdek kadro yedeklenmiş mi?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 483,
+    "GroupID": 115,
+    "Question": "Çalışma saatleri makul şekilde ayarlanmış mı?",
+    "DisplayIndex": 3,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 484,
+    "GroupID": 115,
+    "Question": "Performans değerlendirme ve sonucunda ödüllendirme şeffaf bir şekilde uygulanıyor mu?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 485,
+    "GroupID": 116,
+    "Question": "KTO ekipmanları eksiksiz mi?  (Ekstra Wok Tava,İndiksiyonlu Ocak,Sebze Kabı, Makarna Sos Ölçek Kepcesi,Baharatlık)",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 486,
+    "GroupID": 116,
+    "Question": "Ürünler gramajında servis ediliyor mu?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 487,
+    "GroupID": 116,
+    "Question": "Kıvamında pişirilme yapılıyor mu ? Tabak son kontrolleri ve ürünlerin doğru sunumu  yapılıyor mu? Kenarlarına yağ/kir sıçrayan tabaklar masaya giderken siliniyor mu??",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 488,
+    "GroupID": 116,
+    "Question": "Makarna pişirme ve soslama standartları doğru uygulanıyor mu ? Tabak son kontrolleri yapılıp sıcak şekilde servis ediliyor mu ? Makarna sosu uygun ölçüde (40 gr) ve homojen bir şekilde karıştırılıyor mu ?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 489,
+    "GroupID": 116,
+    "Question": "KTO El menüleri ve Alerjen tablosu sergileniyor mu?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 490,
+    "GroupID": 117,
+    "Question": "KTO ekipmanları eksiksiz mi?  (Ekstra Wok Tava,İndiksiyonlu Ocak,Sebze Kabı, Makarna Sos Ölçek Kepcesi,Baharatlık)",
+    "DisplayIndex": 0,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 491,
+    "GroupID": 117,
+    "Question": "Ürünler gramajında servis ediliyor mu?",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 492,
+    "GroupID": 117,
+    "Question": "Kıvamında pişirilme yapılıyor mu ? Tabak son kontrolleri ve ürünlerin doğru sunumu  yapılıyor mu? Kenarlarına yağ/kir sıçrayan tabaklar masaya giderken siliniyor mu??",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 493,
+    "GroupID": 117,
+    "Question": "Makarna pişirme ve soslama standartları doğru uygulanıyor mu ? Tabak son kontrolleri yapılıp sıcak şekilde servis ediliyor mu ? Makarna sosu uygun ölçüde (40 gr) ve homojen bir şekilde karıştırılıyor mu?",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 494,
+    "GroupID": 117,
+    "Question": "KTO El menüleri ve Alerjen tablosu sergileniyor mu?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 495,
+    "GroupID": 106,
+    "Question": "TEMİZLİK SANİTASYON VE ATIK YÖNETİMİ",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": 0
+  },
+  {
+    "QuestionID": 496,
+    "GroupID": 105,
+    "Question": "",
+    "DisplayIndex": 1,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 497,
+    "GroupID": 107,
+    "Question": "",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 498,
+    "GroupID": 108,
+    "Question": "",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 499,
+    "GroupID": 109,
+    "Question": "",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 500,
+    "GroupID": 110,
+    "Question": "",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 501,
+    "GroupID": 111,
+    "Question": "",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 502,
+    "GroupID": 112,
+    "Question": "",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 503,
+    "GroupID": 113,
+    "Question": "",
+    "DisplayIndex": 1,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 504,
+    "GroupID": 106,
+    "Question": "ALTYAPI VE EKİPMAN YÖNETİMİ",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 505,
+    "GroupID": 106,
+    "Question": "ZARARLI MÜCADELE",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 506,
+    "GroupID": 106,
+    "Question": "DEPOLAMA- SKT YÖNETİMİ",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 507,
+    "GroupID": 106,
+    "Question": "GIDA GÜVENLİĞİ DEFTERİ- DİĞER KAYITLAR",
+    "DisplayIndex": 5,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 508,
+    "GroupID": 106,
+    "Question": "ÜRETİM HAZIRLIK UYGULAMALARI",
+    "DisplayIndex": 6,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 509,
+    "GroupID": 106,
+    "Question": "PERSONEL HİJYENİ VE FARKINDALIK",
+    "DisplayIndex": 7,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 510,
+    "GroupID": 106,
+    "Question": "DİĞER",
+    "DisplayIndex": 8,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 511,
+    "GroupID": 106,
+    "Question": "ÖNERİ VE DEĞERLENDİRMELER",
+    "DisplayIndex": 9,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 512,
+    "GroupID": 56,
+    "Question": "Tabağını Kendin Oluşturla ilgili tüm malzeme yeterli  seviye de var mı?Ürün pişirme ve sunumu doğru uygulanıyor mu?",
+    "DisplayIndex": 2,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 513,
+    "GroupID": 54,
+    "Question": "Platform yorumları takip edilerek aksaklıklarla ilgili aksiyon alınıyor mu?",
+    "DisplayIndex": 6,
+    "LineDeleted": 1,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 514,
+    "GroupID": 98,
+    "Question": "RSD) Restoran Sunum dosyası güncel mi ?  (Son 3 aylık veri, son 3 odz raporu ve hareket planlarını çıktısı dosyada bulunuyor mu?)",
+    "DisplayIndex": 8,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 515,
+    "GroupID": 8,
+    "Question": "RSD) Restoran Sunum dosyası güncel mi ?  (Son 3 aylık veri, son 3 odz raporu ve hareket planlarını çıktısı dosyada bulunuyor mu?)",
+    "DisplayIndex": 3,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 516,
+    "GroupID": 101,
+    "Question": "Restoran paket servis ürün hazırlama standartlarına uyuyor mu, hatalı yada eksik ürün gönderiliyor mu, siparişler çifte kontrol yapılıyor mu?",
+    "DisplayIndex": 9,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 517,
+    "GroupID": 101,
+    "Question": "Paket servis personeline ürün hazırlama ve adisyon okuma konusunda eğitim verilmiş mi?",
+    "DisplayIndex": 10,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 518,
+    "GroupID": 49,
+    "Question": "Çalışan kuryelerin A2 motorsiklet ehliyeti ve SGK Girişleri Mevcut mu ?",
+    "DisplayIndex": 15,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 519,
+    "GroupID": 49,
+    "Question": "Motorcuların Koruyucu Güvenlik Ekipmanlarının Tam ve Eksiksiz mi ?",
+    "DisplayIndex": 16,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 520,
+    "GroupID": 49,
+    "Question": "Motosiklet Kutuları sağlam mı kutu üzeri V3 stickerler mevcut mu? Taşıma Çantaları Sağlam ve Temiz mi ?",
+    "DisplayIndex": 17,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 521,
+    "GroupID": 49,
+    "Question": "Restoranda paket servis istasyonu var ve stokları hazırlanmış mı?",
+    "DisplayIndex": 18,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 522,
+    "GroupID": 49,
+    "Question": "Paket servis personeline ürün hazırlama ve adisyon okuma konusunda eğitim verilmiş mi?",
+    "DisplayIndex": 19,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 523,
+    "GroupID": 49,
+    "Question": "Restoranda planlı runner var, siparişler sabit bir personel tarafından hazırlanıyor mu?",
+    "DisplayIndex": 20,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 524,
+    "GroupID": 49,
+    "Question": "Restoran paket servis ürün hazırlama standartlarına uyuyor mu, hatalı yada eksik ürün gönderiliyor mu, siparişler çifte kontrol yapılıyor mu?",
+    "DisplayIndex": 21,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 525,
+    "GroupID": 49,
+    "Question": "Paket servis şikayet kontrolü yapılıyor, aksiyon alınıyor mu?",
+    "DisplayIndex": 22,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 526,
+    "GroupID": 49,
+    "Question": "Yemek Sepeti Puanlaması 5 Üzerinden 4,5 Puan üzerinde Kalıyor mu ?",
+    "DisplayIndex": 23,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 527,
+    "GroupID": 49,
+    "Question": "Trendyol Puanlaması 5 Üzerinden 4,5 Puan üzerinde Kalıyor mu ?",
+    "DisplayIndex": 24,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 528,
+    "GroupID": 49,
+    "Question": "Getir Puanlaması 5 Üzerinden 4,5 Puan üzerinde Kalıyor mu ?",
+    "DisplayIndex": 25,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 529,
+    "GroupID": 49,
+    "Question": "TD Tarafından Belirlenen Paket Servis Çalışma Saatlerine Uyuluyor mu ?",
+    "DisplayIndex": 26,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 530,
+    "GroupID": 49,
+    "Question": "Motor Bakımları Düzenli olarak Honda yetkili servisinde Yaptırılıyor mu ?",
+    "DisplayIndex": 27,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 531,
+    "GroupID": 49,
+    "Question": "Restoranda Planlı Motorcu Sayısı Yeterli mi ?",
+    "DisplayIndex": 28,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 532,
+    "GroupID": 49,
+    "Question": "Motosiklet Muayene ve Sigorta İşlemleri Yapılmış mı ?",
+    "DisplayIndex": 29,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 533,
+    "GroupID": 52,
+    "Question": "Yazarkasalar aktif çalışıyor mu arıza mevcut mu? Şube de tüm yemek kartları ödemeleri alınıyor mu?",
+    "DisplayIndex": 6,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  },
+  {
+    "QuestionID": 534,
+    "GroupID": 55,
+    "Question": "Şube de hijyen denetimi hazırlıkları ile alakalı bir eksiklik görüldü mü ?",
+    "DisplayIndex": 4,
+    "LineDeleted": 0,
+    "Point": "NULL"
+  }
+]
